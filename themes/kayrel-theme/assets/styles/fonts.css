@@ -1,0 +1,17 @@
+
+/*
+ * DaxMedium
+ */
+
+@font-face {
+    font-family: 'DaxMedium';
+    src: url('../fonts/daxmedium/daxmedium.eot');
+    src: url('../fonts/daxmedium/daxmedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/daxmedium/daxmedium.woff2') format('woff2'),
+         url('../fonts/daxmedium/daxmedium.woff') format('woff'),
+         url('../fonts/daxmedium/daxmedium.ttf') format('truetype'),
+         url('../fonts/daxmedium/daxmedium.svg#dax-mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
