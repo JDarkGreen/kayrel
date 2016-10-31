@@ -50,3 +50,9 @@ if( stream_resolve_include_path('functions/code/clean-code.php') )
  *--------------------------------------------*/
 if( stream_resolve_include_path('functions/register/register-menu.php') )
   include('functions/register/register-menu.php');
+
+/*--------------------------------------------
+ * Registrar Nuevos Tipos de Post Personalizados
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/register/register-cpt.php') )
+  include('functions/register/register-cpt.php');
