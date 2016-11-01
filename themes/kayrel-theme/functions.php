@@ -42,6 +42,23 @@ if( stream_resolve_include_path('functions/code/clean-code.php') )
 
 
 /* ---------------------------------------------------
+ * ADMINISTRADOR DE SISTEMA
+ *---------------------------------------------------*/
+
+//css
+if( stream_resolve_include_path('admin/assets/custom-styles.php') )
+	include('admin/assets/custom-styles.php');
+
+//javascript
+if( stream_resolve_include_path('admin/assets/custom-scripts.php') )
+	include('admin/assets/custom-scripts.php');
+
+//OPCIONES DE TEMA
+if( stream_resolve_include_path('admin/theme-customizer-modal.php') )
+	include('admin/theme-customizer-modal.php');
+
+
+/* ---------------------------------------------------
  * CONFIGURACIÓN EN EL TEMA
  *---------------------------------------------------*/
 
@@ -56,3 +73,34 @@ if( stream_resolve_include_path('functions/register/register-menu.php') )
  *--------------------------------------------*/
 if( stream_resolve_include_path('functions/register/register-cpt.php') )
   include('functions/register/register-cpt.php');
+
+/*--------------------------------------------
+ * Registrar Nuevos Metabox
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/register/register-metabox.php') )
+  include('functions/register/register-metabox.php');
+
+/*--------------------------------------------
+ * Registrar Nuevos Javascript
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/register/register-scripts.php') )
+  include('functions/register/register-scripts.php');
+
+/*--------------------------------------------
+ * Registrar Nuevos Funciones Personalizadas
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/register/register-custom-functions.php') )
+  include('functions/register/register-custom-functions.php');
+
+/*--------------------------------------------
+ * Soporte de Tema
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/support-formats.php') )
+	include('functions/support-formats.php');
+
+
+/*--------------------------------------------
+ * PERSONALIZACIÓN de Columnas
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/personalize/new-columns.php') )
+	include('functions/personalize/new-columns.php');

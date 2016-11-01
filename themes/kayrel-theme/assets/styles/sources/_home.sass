@@ -5,5 +5,55 @@
  * a la sección / página - HOME
  */
 
-.body
-	width : 100%
+/*
+ * HOME SLIDER
+ */
+#carousel-home
+	//Texto de Slider 
+	.contentTextSlider
+		color : white 
+		h2 
+			font-family: 'Helvetica57'
+			font-size  : 45px !important
+		h3 
+			font-family: 'angelface'
+			font-size  : 8em !important
+
+	.tparrows
+		background: rgba(255,255,255,.7)
+		height    : 55px
+		padding   : 8px 0
+		width     : 32px 
+		//before
+		&:before 
+			color    : black 
+			font-size: 20px
+
+//Btn Slider Home
+#btn-slider-home
+	background     : #FF3B5E
+	color          : white 
+	font-family    : 'Helvetica57'
+	line-height    : 1em 
+	max-width      : 320px
+	padding        : 6px 13px
+	text-decoration: none 
+	width          : 100%
+
+/*
+ * SECTION MISCELANEO
+ */
+
+#sectionMiscelaneo
+	background: url('../images/backgrounds/fondo_miscelaneo.jpg') repeat
+	height    : 335px 
+	overflow  : hidden 
+	padding   : 39px 0
+
+	.itemMiscelaneo
+		margin: 0 46px 0 0
+		width : calc(100%/2 - 23px)
+
+		//Segundos y ultimos elementos 
+		&:nth-child(2n) , &:last-child 
+			margin-right : 0 !important

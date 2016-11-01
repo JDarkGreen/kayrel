@@ -15,3 +15,34 @@
     font-style: normal;
 
 }
+
+/*
+ * AngelFace
+ */
+@font-face {
+    font-family: 'angelface';
+    src: url('../fonts/angelface/angelface.eot');
+    src: url('../fonts/angelface/angelface.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/angelface/angelface.woff2') format('woff2'),
+         url('../fonts/angelface/angelface.woff') format('woff'),
+         url('../fonts/angelface/angelface.ttf') format('truetype'),
+         url('../fonts/angelface/angelface.svg#angelfaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Helvetica57
+ */
+
+@font-face {
+	font-family: 'Helvetica57';
+	src: url('../fonts/helvetica57/HelveticaNeue57.eot');
+	src: url('../fonts/helvetica57/HelveticaNeue57.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/helvetica57/HelveticaNeue57.woff2') format('woff2'),
+		url('../fonts/helvetica57/HelveticaNeue57.woff') format('woff'),
+		url('../fonts/helvetica57/HelveticaNeue57.ttf') format('truetype'),
+		url('../fonts/helvetica57/HelveticaNeue57.svg#HelveticaNeue57') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
