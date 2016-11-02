@@ -30,8 +30,10 @@
 			<div class="itemMiscelaneo">
 
 				<?php 
-					//Si Existe Facebook
-				if( isset($options['theme_meta_brochure']) && !empty($options['theme_meta_brochure']) ) : ?>
+				//Si Existe Facebook
+				if( isset($options['theme_meta_brochure']) && !empty($options['theme_meta_brochure']) ) 
+					include('/../common-section/fan-page-facebook.php'); 
+				?>
 				
 			</div> <!-- /.itemMiscelaneo -->	
 
