@@ -93,6 +93,18 @@ if( stream_resolve_include_path('functions/register/register-custom-functions.ph
   include('functions/register/register-custom-functions.php');
 
 /*--------------------------------------------
+ * Registrar Nuevas Taxonomías
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/register/register-taxonomies.php') )
+  include('functions/register/register-taxonomies.php');
+
+/*--------------------------------------------
+ * Customizar Campos de Taxonomías
+ *--------------------------------------------*/
+if( stream_resolve_include_path('functions/taxonomy/custom-fields-taxonomies.php') )
+  include('functions/taxonomy/custom-fields-taxonomies.php');
+
+/*--------------------------------------------
  * Soporte de Tema
  *--------------------------------------------*/
 if( stream_resolve_include_path('functions/support-formats.php') )

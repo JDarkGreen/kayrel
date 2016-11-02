@@ -26,6 +26,12 @@ if(stream_resolve_include_path('partials/home/slider-home.php'))
 if(stream_resolve_include_path('partials/home/miscelaneo.php'))
 	include('partials/home/miscelaneo.php');
 
+/*
+ * Importar Template de Destacados Productos
+ */
+if(stream_resolve_include_path('partials/home/product-features.php'))
+	include('partials/home/product-features.php');
+
 
 
 ?>

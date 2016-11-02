@@ -23,6 +23,22 @@ function register_custom_post_types()
 		'menu_icon'   => 'dashicons-images-alt',
 	);
 
+	/*Productos*/
+	$arr_cpt['theme-products'] = array(
+		'plural_name' => 'Productos',
+		'name'        => 'Producto',
+		'description' => 'Productos en el tema',
+		'menu_icon'   => 'dashicons-cart',
+	);
+
+	/*Marcas*/
+	$arr_cpt['theme-branding'] = array(
+		'plural_name' => 'Marcas',
+		'name'        => 'Marca',
+		'description' => 'Marcas en el tema',
+		'menu_icon'   => 'dashicons-groups',
+	);
+
 	/*
 	 * Hacer Loop de Custom Post Types
 	 */

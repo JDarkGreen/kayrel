@@ -246,7 +246,7 @@ function cd_mb_order_type_posts_save( $post_id )
     if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
 
     /** Check the user allowed to edit the post or page */
-    if ( !current_user_can( 'edit_post', $post_id ) ) return;
+     if ( !current_user_can( 'edit_post', $post_id ) ) return;
 
     /*
      * Guardar La Data

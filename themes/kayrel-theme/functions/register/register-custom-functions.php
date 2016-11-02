@@ -30,8 +30,9 @@ function exist_map()
 * -- REDES SOCIALES
 * ---------------------------------------------------------------
 **/
-
-include( '/../custom-functions/functions-social-links.php' );
+$path_function_social = realpath( dirname(dirname(__FILE__)) . '/custom-functions/functions-social-links.php' );
+if( stream_resolve_include_path($path_function_social) )
+include($path_function_social);
 
 /**
 * ---------------------------------------------------------------
@@ -39,7 +40,9 @@ include( '/../custom-functions/functions-social-links.php' );
 * ---------------------------------------------------------------
 **/
 
-include( '/../custom-functions/functions-banner-page.php' );
+$path_function_banner = realpath( dirname(dirname(__FILE__)) . '/custom-functions/functions-banner-page.php' );
+if( stream_resolve_include_path($path_function_banner) )
+include( $path_function_banner );
 
 
 /**
@@ -47,18 +50,16 @@ include( '/../custom-functions/functions-banner-page.php' );
 * -- CONSEGUIR GALERIA DEL POST SI EXISTE METABOX DE GALERIA
 * ---------------------------------------------------------------
 **/
-
-include( '/../custom-functions/functions-gallery-post.php' );
+$path_function_gallery = realpath( dirname(dirname(__FILE__)) . '/custom-functions/functions-gallery-post.php' );
+if( stream_resolve_include_path($path_function_gallery ) )
+include( $path_function_gallery  );
 
 /**
 * ---------------------------------------------------------------
 * -- NUEVOS FILTROS CUSTOMIZADOS - PERSONALIZADOS
 * ---------------------------------------------------------------
 **/
+$path_function_filters = realpath( dirname(dirname(__FILE__)) . '/custom-functions/custom-filters.php' );
+if( stream_resolve_include_path($path_function_filters) )
+include($path_function_filters);
 
-if( stream_resolve_include_path('/../custom-functions/custom-filters.php') ):
-	include('/../custom-functions/custom-filters.php');
-endif;
-
-
-?>

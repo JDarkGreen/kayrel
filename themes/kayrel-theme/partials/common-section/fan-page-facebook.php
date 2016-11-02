@@ -4,10 +4,13 @@
  */
 
 //Extraer todas las opciones de personalización
-$options = get_option("theme_settings"); ?>
+$options = get_option("theme_settings"); 
+
+//Facebook bg
+$bg_facebook = IMAGES . '/backgrounds/bg_facebook.png';  ?>
 
 
-<div id="facebookContainer">
+<div id="facebookContainer" style="background-image:url(<?= $bg_facebook; ?>); height: 253px; width : 100%">
 
 	<div id="fb-root"></div>
 	
@@ -21,7 +24,7 @@ $options = get_option("theme_settings"); ?>
 
 	<?php if( has_facebook() ) : ?>
 
-	<div class="fb-page" data-href="<?= get_facebook() ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="515" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= get_facebook() ?>" class="fb-xfbml-parse-ignore"><a href="<?= get_facebook() ?>"> <?= get_bloginfo('name'); ?> </a></blockquote></div>
+	<div class="fb-page" data-href="<?= get_facebook() ?>" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-width="502" data-height="253" data-hide-cover="false" data-show-facepile="true"><blockquote cite="<?= get_facebook() ?>" class="fb-xfbml-parse-ignore"><a href="<?= get_facebook() ?>"> <?= get_bloginfo('name'); ?> </a></blockquote></div>
 	
 	<?php endif; ?>
 

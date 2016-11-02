@@ -94,7 +94,7 @@ function cd_mb_slider_select_save( $post_id )
     if( !isset( $_POST['meta_box_nonce'] ) || !wp_verify_nonce( $_POST['meta_box_nonce'], 'my_meta_box_nonce' ) ) return;
      
     // if our current user can't edit this post, bail
-    if ( !current_user_can( 'edit_post', $post_id ) ) return;
+     if ( !current_user_can( 'edit_post', $post_id ) ) return;
      
     // Make sure your data is set before trying to save it
     if( isset( $_POST['revsliderselect'] ) ):
