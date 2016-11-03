@@ -23,6 +23,8 @@ $options = get_option("theme_settings");
 
 <!-- Layout de Página -->
 <main class="pageContentLayout">
+
+	<!-- Espacios --> <br/><br/>
 	
 	<!-- Wrapper de Contenido -->
 	<div class="wrapperLayoutPage">

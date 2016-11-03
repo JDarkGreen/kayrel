@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Friday 28. October 2016 23:46 UTC
+# Generated: Thursday 3. November 2016 23:20 UTC
 # Hostname: localhost
 # Database: `kayrel`
 # --------------------------------------------------------
@@ -149,7 +149,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=264 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=395 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -183,12 +183,12 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (25, 'links_updated_date_format', 'j F, Y g:i a', 'yes'),
 (26, 'comment_moderation', '0', 'yes'),
 (27, 'moderation_notify', '1', 'yes'),
-(28, 'permalink_structure', '/%year%/%monthnum%/%day%/%postname%/', 'yes'),
-(29, 'rewrite_rules', 'a:92:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:23:"category/(.+?)/embed/?$";s:46:"index.php?category_name=$matches[1]&embed=true";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:54:"wpmf-category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?wpmf-category=$matches[1]&feed=$matches[2]";s:49:"wpmf-category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?wpmf-category=$matches[1]&feed=$matches[2]";s:30:"wpmf-category/([^/]+)/embed/?$";s:46:"index.php?wpmf-category=$matches[1]&embed=true";s:42:"wpmf-category/([^/]+)/page/?([0-9]{1,})/?$";s:53:"index.php?wpmf-category=$matches[1]&paged=$matches[2]";s:24:"wpmf-category/([^/]+)/?$";s:35:"index.php?wpmf-category=$matches[1]";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:58:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:68:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:88:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:83:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:64:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:53:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/embed/?$";s:91:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/trackback/?$";s:85:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&tb=1";s:77:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&feed=$matches[5]";s:65:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/page/?([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&paged=$matches[5]";s:72:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)/comment-page-([0-9]{1,})/?$";s:98:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&cpage=$matches[5]";s:61:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([^/]+)(?:/([0-9]+))?/?$";s:97:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&name=$matches[4]&page=$matches[5]";s:47:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:57:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:77:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:72:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:53:"[0-9]{4}/[0-9]{1,2}/[0-9]{1,2}/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&cpage=$matches[4]";s:51:"([0-9]{4})/([0-9]{1,2})/comment-page-([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&cpage=$matches[3]";s:38:"([0-9]{4})/comment-page-([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&cpage=$matches[2]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";}', 'yes'),
+(28, 'permalink_structure', '/%postname%/', 'yes'),
+(29, 'rewrite_rules', 'a:163:{s:11:"^wp-json/?$";s:22:"index.php?rest_route=/";s:14:"^wp-json/(.*)?";s:33:"index.php?rest_route=/$matches[1]";s:20:"theme-slider-home/?$";s:37:"index.php?post_type=theme-slider-home";s:50:"theme-slider-home/feed/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?post_type=theme-slider-home&feed=$matches[1]";s:45:"theme-slider-home/(feed|rdf|rss|rss2|atom)/?$";s:54:"index.php?post_type=theme-slider-home&feed=$matches[1]";s:37:"theme-slider-home/page/([0-9]{1,})/?$";s:55:"index.php?post_type=theme-slider-home&paged=$matches[1]";s:17:"theme-products/?$";s:34:"index.php?post_type=theme-products";s:47:"theme-products/feed/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?post_type=theme-products&feed=$matches[1]";s:42:"theme-products/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?post_type=theme-products&feed=$matches[1]";s:34:"theme-products/page/([0-9]{1,})/?$";s:52:"index.php?post_type=theme-products&paged=$matches[1]";s:17:"theme-branding/?$";s:34:"index.php?post_type=theme-branding";s:47:"theme-branding/feed/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?post_type=theme-branding&feed=$matches[1]";s:42:"theme-branding/(feed|rdf|rss|rss2|atom)/?$";s:51:"index.php?post_type=theme-branding&feed=$matches[1]";s:34:"theme-branding/page/([0-9]{1,})/?$";s:52:"index.php?post_type=theme-branding&paged=$matches[1]";s:47:"category/(.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:42:"category/(.+?)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?category_name=$matches[1]&feed=$matches[2]";s:23:"category/(.+?)/embed/?$";s:46:"index.php?category_name=$matches[1]&embed=true";s:35:"category/(.+?)/page/?([0-9]{1,})/?$";s:53:"index.php?category_name=$matches[1]&paged=$matches[2]";s:17:"category/(.+?)/?$";s:35:"index.php?category_name=$matches[1]";s:44:"tag/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:39:"tag/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?tag=$matches[1]&feed=$matches[2]";s:20:"tag/([^/]+)/embed/?$";s:36:"index.php?tag=$matches[1]&embed=true";s:32:"tag/([^/]+)/page/?([0-9]{1,})/?$";s:43:"index.php?tag=$matches[1]&paged=$matches[2]";s:14:"tag/([^/]+)/?$";s:25:"index.php?tag=$matches[1]";s:45:"type/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:40:"type/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?post_format=$matches[1]&feed=$matches[2]";s:21:"type/([^/]+)/embed/?$";s:44:"index.php?post_format=$matches[1]&embed=true";s:33:"type/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?post_format=$matches[1]&paged=$matches[2]";s:15:"type/([^/]+)/?$";s:33:"index.php?post_format=$matches[1]";s:54:"wpmf-category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?wpmf-category=$matches[1]&feed=$matches[2]";s:49:"wpmf-category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:52:"index.php?wpmf-category=$matches[1]&feed=$matches[2]";s:30:"wpmf-category/([^/]+)/embed/?$";s:46:"index.php?wpmf-category=$matches[1]&embed=true";s:42:"wpmf-category/([^/]+)/page/?([0-9]{1,})/?$";s:53:"index.php?wpmf-category=$matches[1]&paged=$matches[2]";s:24:"wpmf-category/([^/]+)/?$";s:35:"index.php?wpmf-category=$matches[1]";s:58:"producto_category/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?producto_category=$matches[1]&feed=$matches[2]";s:53:"producto_category/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?producto_category=$matches[1]&feed=$matches[2]";s:34:"producto_category/([^/]+)/embed/?$";s:50:"index.php?producto_category=$matches[1]&embed=true";s:46:"producto_category/([^/]+)/page/?([0-9]{1,})/?$";s:57:"index.php?producto_category=$matches[1]&paged=$matches[2]";s:28:"producto_category/([^/]+)/?$";s:39:"index.php?producto_category=$matches[1]";s:45:"theme-slider-home/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:55:"theme-slider-home/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:75:"theme-slider-home/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:70:"theme-slider-home/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:70:"theme-slider-home/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:51:"theme-slider-home/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:34:"theme-slider-home/([^/]+)/embed/?$";s:50:"index.php?theme-slider-home=$matches[1]&embed=true";s:38:"theme-slider-home/([^/]+)/trackback/?$";s:44:"index.php?theme-slider-home=$matches[1]&tb=1";s:58:"theme-slider-home/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?theme-slider-home=$matches[1]&feed=$matches[2]";s:53:"theme-slider-home/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:56:"index.php?theme-slider-home=$matches[1]&feed=$matches[2]";s:46:"theme-slider-home/([^/]+)/page/?([0-9]{1,})/?$";s:57:"index.php?theme-slider-home=$matches[1]&paged=$matches[2]";s:53:"theme-slider-home/([^/]+)/comment-page-([0-9]{1,})/?$";s:57:"index.php?theme-slider-home=$matches[1]&cpage=$matches[2]";s:42:"theme-slider-home/([^/]+)(?:/([0-9]+))?/?$";s:56:"index.php?theme-slider-home=$matches[1]&page=$matches[2]";s:34:"theme-slider-home/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:44:"theme-slider-home/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:64:"theme-slider-home/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:59:"theme-slider-home/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:59:"theme-slider-home/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:40:"theme-slider-home/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:42:"theme-products/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:52:"theme-products/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:72:"theme-products/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"theme-products/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"theme-products/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:48:"theme-products/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:31:"theme-products/([^/]+)/embed/?$";s:47:"index.php?theme-products=$matches[1]&embed=true";s:35:"theme-products/([^/]+)/trackback/?$";s:41:"index.php?theme-products=$matches[1]&tb=1";s:55:"theme-products/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?theme-products=$matches[1]&feed=$matches[2]";s:50:"theme-products/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?theme-products=$matches[1]&feed=$matches[2]";s:43:"theme-products/([^/]+)/page/?([0-9]{1,})/?$";s:54:"index.php?theme-products=$matches[1]&paged=$matches[2]";s:50:"theme-products/([^/]+)/comment-page-([0-9]{1,})/?$";s:54:"index.php?theme-products=$matches[1]&cpage=$matches[2]";s:39:"theme-products/([^/]+)(?:/([0-9]+))?/?$";s:53:"index.php?theme-products=$matches[1]&page=$matches[2]";s:31:"theme-products/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:41:"theme-products/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:61:"theme-products/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"theme-products/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"theme-products/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:37:"theme-products/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:42:"theme-branding/[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:52:"theme-branding/[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:72:"theme-branding/[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"theme-branding/[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:67:"theme-branding/[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:48:"theme-branding/[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:31:"theme-branding/([^/]+)/embed/?$";s:47:"index.php?theme-branding=$matches[1]&embed=true";s:35:"theme-branding/([^/]+)/trackback/?$";s:41:"index.php?theme-branding=$matches[1]&tb=1";s:55:"theme-branding/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?theme-branding=$matches[1]&feed=$matches[2]";s:50:"theme-branding/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:53:"index.php?theme-branding=$matches[1]&feed=$matches[2]";s:43:"theme-branding/([^/]+)/page/?([0-9]{1,})/?$";s:54:"index.php?theme-branding=$matches[1]&paged=$matches[2]";s:50:"theme-branding/([^/]+)/comment-page-([0-9]{1,})/?$";s:54:"index.php?theme-branding=$matches[1]&cpage=$matches[2]";s:39:"theme-branding/([^/]+)(?:/([0-9]+))?/?$";s:53:"index.php?theme-branding=$matches[1]&page=$matches[2]";s:31:"theme-branding/[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:41:"theme-branding/[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:61:"theme-branding/[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"theme-branding/[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:56:"theme-branding/[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:37:"theme-branding/[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:48:".*wp-(atom|rdf|rss|rss2|feed|commentsrss2)\\.php$";s:18:"index.php?feed=old";s:20:".*wp-app\\.php(/.*)?$";s:19:"index.php?error=403";s:18:".*wp-register.php$";s:23:"index.php?register=true";s:32:"feed/(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:27:"(feed|rdf|rss|rss2|atom)/?$";s:27:"index.php?&feed=$matches[1]";s:8:"embed/?$";s:21:"index.php?&embed=true";s:20:"page/?([0-9]{1,})/?$";s:28:"index.php?&paged=$matches[1]";s:41:"comments/feed/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:36:"comments/(feed|rdf|rss|rss2|atom)/?$";s:42:"index.php?&feed=$matches[1]&withcomments=1";s:17:"comments/embed/?$";s:21:"index.php?&embed=true";s:44:"search/(.+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:39:"search/(.+)/(feed|rdf|rss|rss2|atom)/?$";s:40:"index.php?s=$matches[1]&feed=$matches[2]";s:20:"search/(.+)/embed/?$";s:34:"index.php?s=$matches[1]&embed=true";s:32:"search/(.+)/page/?([0-9]{1,})/?$";s:41:"index.php?s=$matches[1]&paged=$matches[2]";s:14:"search/(.+)/?$";s:23:"index.php?s=$matches[1]";s:47:"author/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:42:"author/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:50:"index.php?author_name=$matches[1]&feed=$matches[2]";s:23:"author/([^/]+)/embed/?$";s:44:"index.php?author_name=$matches[1]&embed=true";s:35:"author/([^/]+)/page/?([0-9]{1,})/?$";s:51:"index.php?author_name=$matches[1]&paged=$matches[2]";s:17:"author/([^/]+)/?$";s:33:"index.php?author_name=$matches[1]";s:69:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:64:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:80:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&feed=$matches[4]";s:45:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/embed/?$";s:74:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&embed=true";s:57:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:81:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]&paged=$matches[4]";s:39:"([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/?$";s:63:"index.php?year=$matches[1]&monthnum=$matches[2]&day=$matches[3]";s:56:"([0-9]{4})/([0-9]{1,2})/feed/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:51:"([0-9]{4})/([0-9]{1,2})/(feed|rdf|rss|rss2|atom)/?$";s:64:"index.php?year=$matches[1]&monthnum=$matches[2]&feed=$matches[3]";s:32:"([0-9]{4})/([0-9]{1,2})/embed/?$";s:58:"index.php?year=$matches[1]&monthnum=$matches[2]&embed=true";s:44:"([0-9]{4})/([0-9]{1,2})/page/?([0-9]{1,})/?$";s:65:"index.php?year=$matches[1]&monthnum=$matches[2]&paged=$matches[3]";s:26:"([0-9]{4})/([0-9]{1,2})/?$";s:47:"index.php?year=$matches[1]&monthnum=$matches[2]";s:43:"([0-9]{4})/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:38:"([0-9]{4})/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?year=$matches[1]&feed=$matches[2]";s:19:"([0-9]{4})/embed/?$";s:37:"index.php?year=$matches[1]&embed=true";s:31:"([0-9]{4})/page/?([0-9]{1,})/?$";s:44:"index.php?year=$matches[1]&paged=$matches[2]";s:13:"([0-9]{4})/?$";s:26:"index.php?year=$matches[1]";s:27:".?.+?/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:".?.+?/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:".?.+?/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:".?.+?/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:".?.+?/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"(.?.+?)/embed/?$";s:41:"index.php?pagename=$matches[1]&embed=true";s:20:"(.?.+?)/trackback/?$";s:35:"index.php?pagename=$matches[1]&tb=1";s:40:"(.?.+?)/feed/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:35:"(.?.+?)/(feed|rdf|rss|rss2|atom)/?$";s:47:"index.php?pagename=$matches[1]&feed=$matches[2]";s:28:"(.?.+?)/page/?([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&paged=$matches[2]";s:35:"(.?.+?)/comment-page-([0-9]{1,})/?$";s:48:"index.php?pagename=$matches[1]&cpage=$matches[2]";s:24:"(.?.+?)(?:/([0-9]+))?/?$";s:47:"index.php?pagename=$matches[1]&page=$matches[2]";s:27:"[^/]+/attachment/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:37:"[^/]+/attachment/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:57:"[^/]+/attachment/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:52:"[^/]+/attachment/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:33:"[^/]+/attachment/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";s:16:"([^/]+)/embed/?$";s:37:"index.php?name=$matches[1]&embed=true";s:20:"([^/]+)/trackback/?$";s:31:"index.php?name=$matches[1]&tb=1";s:40:"([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:35:"([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:43:"index.php?name=$matches[1]&feed=$matches[2]";s:28:"([^/]+)/page/?([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&paged=$matches[2]";s:35:"([^/]+)/comment-page-([0-9]{1,})/?$";s:44:"index.php?name=$matches[1]&cpage=$matches[2]";s:24:"([^/]+)(?:/([0-9]+))?/?$";s:43:"index.php?name=$matches[1]&page=$matches[2]";s:16:"[^/]+/([^/]+)/?$";s:32:"index.php?attachment=$matches[1]";s:26:"[^/]+/([^/]+)/trackback/?$";s:37:"index.php?attachment=$matches[1]&tb=1";s:46:"[^/]+/([^/]+)/feed/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/(feed|rdf|rss|rss2|atom)/?$";s:49:"index.php?attachment=$matches[1]&feed=$matches[2]";s:41:"[^/]+/([^/]+)/comment-page-([0-9]{1,})/?$";s:50:"index.php?attachment=$matches[1]&cpage=$matches[2]";s:22:"[^/]+/([^/]+)/embed/?$";s:43:"index.php?attachment=$matches[1]&embed=true";}', 'yes'),
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:8:{i:0;s:27:"autoptimize/autoptimize.php";i:1;s:31:"cache-enabler/cache-enabler.php";i:2;s:33:"duplicate-post/duplicate-post.php";i:3;s:37:"error-log-viewer/error-log-viewer.php";i:4;s:31:"live-admin-customzier/index.php";i:5;s:19:"optimus/optimus.php";i:6;s:35:"wp-media-folder/wp-media-folder.php";i:7;s:31:"wp-migrate-db/wp-migrate-db.php";}', 'yes'),
+(33, 'active_plugins', 'a:7:{i:0;s:27:"autoptimize/autoptimize.php";i:1;s:33:"duplicate-post/duplicate-post.php";i:2;s:37:"error-log-viewer/error-log-viewer.php";i:3;s:31:"live-admin-customzier/index.php";i:4;s:19:"optimus/optimus.php";i:5;s:35:"wp-media-folder/wp-media-folder.php";i:6;s:31:"wp-migrate-db/wp-migrate-db.php";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -260,11 +260,11 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (101, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:6:{i:1477725790;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1477725846;a:1:{s:36:"check_plugin_updates-wp-media-folder";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1477769030;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1477773626;a:1:{s:15:"ao_cachechecker";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1477776896;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:6:{i:1478244190;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478244246;a:1:{s:36:"check_plugin_updates-wp-media-folder";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478287430;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478292026;a:1:{s:15:"ao_cachechecker";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478295296;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (121, 'can_compress_scripts', '1', 'no'),
-(138, 'recently_activated', 'a:0:{}', 'yes'),
+(138, 'recently_activated', 'a:1:{s:31:"cache-enabler/cache-enabler.php";i:1478187032;}', 'yes'),
 (140, 'wpmf_use_taxonomy', '1', 'yes'),
-(141, 'rrrlgvwr_options', 'a:10:{s:21:"plugin_option_version";s:5:"1.0.4";s:21:"php_error_log_visible";i:0;s:11:"lines_count";i:10;s:16:"confirm_filesize";i:0;s:14:"error_log_path";s:0:"";s:17:"count_visible_log";i:0;s:14:"frequency_send";i:1;s:8:"hour_day";i:3600;s:23:"display_settings_notice";i:1;s:22:"suggest_feature_banner";i:1;}', 'yes'),
+(141, 'rrrlgvwr_options', 'a:15:{s:21:"plugin_option_version";s:5:"1.0.4";s:21:"php_error_log_visible";i:0;s:11:"lines_count";i:10;s:16:"confirm_filesize";i:0;s:14:"error_log_path";s:0:"";s:17:"count_visible_log";i:1;s:14:"frequency_send";i:1;s:8:"hour_day";i:3600;s:23:"display_settings_notice";i:1;s:22:"suggest_feature_banner";i:1;s:13:"first_install";i:1478187038;s:19:"go_settings_counter";i:1;s:9:"file_path";a:1:{i:1;s:77:"C:/xampp/htdocs/kayrel/wp-content/plugins/error-log-viewer/log/php-errors.log";}s:20:"0_php-errors_visible";i:1;s:10:"send_email";i:0;}', 'yes'),
 (145, 'bstwbsftwppdtplgns_options', 'a:1:{s:8:"bws_menu";a:1:{s:7:"version";a:1:{s:37:"error-log-viewer/error-log-viewer.php";s:5:"1.9.0";}}}', 'yes'),
 (146, 'duplicate_post_copyexcerpt', '1', 'yes'),
 (147, 'duplicate_post_copyattachments', '0', 'yes'),
@@ -296,8 +296,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (173, 'wpmf_weight_selected', '[["0-61440","kB"],["61440-122880","kB"],["122880-184320","kB"],["184320-245760","kB"],["245760-307200","kB"]]', 'yes'),
 (174, 'wpmf_color_singlefile', '{"bgdownloadlink":"#444444","hvdownloadlink":"#888888","fontdownloadlink":"#ffffff","hoverfontcolor":"#ffffff"}', 'yes'),
 (175, 'wpmf_option_singlefile', '0', 'yes'),
-(176, 'external_updates-wp-media-folder', 'O:8:"stdClass":3:{s:9:"lastCheck";i:1477687454;s:14:"checkedVersion";s:5:"3.3.3";s:6:"update";O:8:"stdClass":7:{s:2:"id";i:0;s:4:"slug";s:15:"wp-media-folder";s:7:"version";s:5:"3.8.4";s:8:"homepage";s:61:"https://www.joomunited.com/wordpress-products/wp-media-folder";s:12:"download_url";s:120:"https://www.joomunited.com/index.php?option=com_juupdater&task=download.download&extension=wp-media-folder&version=3.8.4";s:14:"upgrade_notice";s:29:"Upgrade to the latest version";s:8:"filename";s:35:"wp-media-folder/wp-media-folder.php";}}', 'no'),
-(178, 'wpmf-category_children', 'a:0:{}', 'yes'),
+(176, 'external_updates-wp-media-folder', 'O:8:"stdClass":3:{s:9:"lastCheck";i:1478192945;s:14:"checkedVersion";s:5:"3.3.3";s:6:"update";O:8:"stdClass":7:{s:2:"id";i:0;s:4:"slug";s:15:"wp-media-folder";s:7:"version";s:5:"3.8.4";s:8:"homepage";s:61:"https://www.joomunited.com/wordpress-products/wp-media-folder";s:12:"download_url";s:120:"https://www.joomunited.com/index.php?option=com_juupdater&task=download.download&extension=wp-media-folder&version=3.8.4";s:14:"upgrade_notice";s:29:"Upgrade to the latest version";s:8:"filename";s:35:"wp-media-folder/wp-media-folder.php";}}', 'no'),
 (179, '_wpmf_import_notice_flag', 'yes', 'yes'),
 (180, 'theme_mods_twentysixteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1477683684;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}}}}', 'yes'),
 (181, 'current_theme', '', 'yes'),
@@ -306,7 +305,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (190, 'autoptimize_version', '2.1.0', 'yes'),
 (206, 'autoptimize_html', 'on', 'yes'),
 (207, 'autoptimize_html_keepcomments', 'on', 'yes'),
-(208, 'autoptimize_js', 'on', 'yes'),
+(208, 'autoptimize_js', '', 'yes'),
 (209, 'autoptimize_js_exclude', 'seal.js, js/jquery/jquery.js', 'yes'),
 (210, 'autoptimize_js_trycatch', 'on', 'yes'),
 (211, 'autoptimize_js_justhead', '', 'yes'),
@@ -326,7 +325,10 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (225, 'autoptimize_cache_nogzip', '', 'yes'),
 (226, 'autoptimize_show_adv', '1', 'yes'),
 (231, 'cache', 'a:0:{}', 'yes'),
-(261, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes') ;
+(261, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
+(296, 'theme_settings', 'a:15:{s:18:"theme_phone_text_1";s:9:"433 02 50";s:18:"theme_phone_text_2";s:0:"";s:16:"theme_cel_text_1";s:11:"940 170 365";s:16:"theme_cel_text_2";s:11:"942 016 105";s:16:"theme_email_text";s:20:"ventas@kayrel.com.pe";s:18:"theme_address_text";s:0:"";s:19:"theme_atention_text";s:0:"";s:19:"theme_meta_brochure";s:67:"http://localhost/kayrel/wp-content/uploads/2016/11/pdf-sample-1.pdf";s:20:"theme_social_fb_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_twitter_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_youtube_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:27:"theme_social_instagram_text";s:0:"";s:26:"theme_social_linkedin_text";s:0:"";s:23:"theme_social_gplus_text";s:0:"";s:27:"theme_social_pinterest_text";s:0:"";}', 'yes'),
+(366, 'wpmf-category_children', 'a:0:{}', 'yes'),
+(392, 'producto_category_children', 'a:1:{i:10;a:2:{i:0;i:11;i:1;i:12;}}', 'yes') ;
 
 #
 # End of data contents of table `wp_options`
@@ -353,7 +355,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=224 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -362,7 +364,7 @@ CREATE TABLE `wp_postmeta` (
 INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (1, 2, '_wp_page_template', 'default'),
 (2, 4, '_edit_last', '1'),
-(3, 4, '_edit_lock', '1477691849:1'),
+(3, 4, '_edit_lock', '1478123921:1'),
 (4, 2, '_edit_last', '1'),
 (5, 2, '_edit_lock', '1477696575:1'),
 (6, 7, '_edit_last', '1'),
@@ -379,10 +381,10 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (17, 13, '_edit_lock', '1477696482:1'),
 (18, 15, '_edit_last', '1'),
 (19, 15, '_wp_page_template', 'default'),
-(20, 15, '_edit_lock', '1477696492:1'),
+(20, 15, '_edit_lock', '1478109485:1'),
 (21, 17, '_edit_last', '1'),
 (22, 17, '_wp_page_template', 'default'),
-(23, 17, '_edit_lock', '1477696762:1'),
+(23, 17, '_edit_lock', '1478108271:1'),
 (24, 19, '_menu_item_type', 'custom'),
 (25, 19, '_menu_item_menu_item_parent', '0'),
 (26, 19, '_menu_item_object_id', '19'),
@@ -424,14 +426,6 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (65, 23, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (66, 23, '_menu_item_xfn', ''),
 (67, 23, '_menu_item_url', ''),
-(69, 24, '_menu_item_type', 'post_type'),
-(70, 24, '_menu_item_menu_item_parent', '0'),
-(71, 24, '_menu_item_object_id', '7'),
-(72, 24, '_menu_item_object', 'page'),
-(73, 24, '_menu_item_target', ''),
-(74, 24, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
-(75, 24, '_menu_item_xfn', ''),
-(76, 24, '_menu_item_url', ''),
 (78, 25, '_menu_item_type', 'post_type'),
 (79, 25, '_menu_item_menu_item_parent', '0'),
 (80, 25, '_menu_item_object_id', '11'),
@@ -455,7 +449,125 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (100, 27, '_menu_item_target', ''),
 (101, 27, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (102, 27, '_menu_item_xfn', ''),
-(103, 27, '_menu_item_url', '') ;
+(103, 27, '_menu_item_url', ''),
+(105, 28, '_edit_last', '1'),
+(106, 28, '_edit_lock', '1478020948:1'),
+(107, 29, '_wp_attached_file', '2016/11/slider_sample.jpg'),
+(108, 29, 'wpmf_size', '241211'),
+(109, 29, 'wpmf_filetype', 'jpg'),
+(110, 29, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:1920;s:6:"height";i:807;s:4:"file";s:25:"2016/11/slider_sample.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"slider_sample-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"slider_sample-300x126.jpg";s:5:"width";i:300;s:6:"height";i:126;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:25:"slider_sample-768x323.jpg";s:5:"width";i:768;s:6:"height";i:323;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:26:"slider_sample-1024x430.jpg";s:5:"width";i:1024;s:6:"height";i:430;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:25:"slider_sample-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:25:"slider_sample-784x330.jpg";s:5:"width";i:784;s:6:"height";i:330;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:1:"6";s:8:"quantity";d:86;s:4:"webp";i:0;}}'),
+(111, 28, '_thumbnail_id', '29'),
+(112, 28, 'mbox_order_post', '2'),
+(113, 28, 'mb_rev_slider_select', 'parallaxvertical'),
+(114, 30, '_edit_last', '1'),
+(115, 30, '_edit_lock', '1478020824:1'),
+(116, 30, '_thumbnail_id', '29') ;
+INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(117, 30, 'mbox_order_post', '1'),
+(118, 30, 'mb_rev_slider_select', 'fadethroughtransparent'),
+(119, 30, '_dp_original', '28'),
+(120, 31, '_wp_attached_file', '2016/11/pdf-sample-1.pdf'),
+(121, 31, 'wpmf_size', '7945'),
+(122, 31, 'wpmf_filetype', 'pdf'),
+(123, 32, '_edit_last', '1'),
+(124, 32, '_edit_lock', '1478211267:1'),
+(125, 33, '_wp_attached_file', '2016/11/sample-product.jpg'),
+(126, 33, 'wpmf_size', '49280'),
+(127, 33, 'wpmf_filetype', 'jpg'),
+(128, 33, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:800;s:6:"height";i:533;s:4:"file";s:26:"2016/11/sample-product.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:26:"sample-product-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:26:"sample-product-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:26:"sample-product-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:26:"sample-product-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:26:"sample-product-525x350.jpg";s:5:"width";i:525;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:2:"10";s:8:"quantity";d:100;s:4:"webp";i:0;}}'),
+(129, 32, '_thumbnail_id', '33'),
+(130, 32, 'mbox_order_post', '1'),
+(131, 32, 'mb_code_product', 'COD 256'),
+(132, 15, 'mbox_order_post', '1'),
+(133, 15, 'mb_featured_banner', ''),
+(134, 32, 'mb_image_gallery', ',33,33,33,51'),
+(135, 32, 'theme_featured_item_check', 'on'),
+(136, 34, '_edit_last', '1'),
+(137, 34, '_edit_lock', '1478110682:1'),
+(138, 34, '_thumbnail_id', '33'),
+(139, 34, 'mbox_order_post', '2'),
+(140, 34, 'mb_code_product', 'COD 256'),
+(141, 34, 'mb_image_gallery', ''),
+(142, 34, 'theme_featured_item_check', 'on'),
+(143, 34, '_dp_original', '32'),
+(144, 35, '_edit_last', '1'),
+(145, 35, '_edit_lock', '1478110694:1'),
+(146, 35, '_thumbnail_id', '33'),
+(147, 35, 'mbox_order_post', '3'),
+(148, 35, 'mb_code_product', 'COD 256'),
+(149, 35, 'mb_image_gallery', ''),
+(150, 35, 'theme_featured_item_check', 'on'),
+(152, 35, '_dp_original', '34'),
+(153, 36, '_edit_last', '1'),
+(154, 36, '_edit_lock', '1478195368:1'),
+(155, 36, '_thumbnail_id', '33'),
+(156, 36, 'mbox_order_post', '4'),
+(157, 36, 'mb_code_product', 'COD 256'),
+(158, 36, 'mb_image_gallery', ''),
+(159, 36, 'theme_featured_item_check', 'on'),
+(161, 36, '_dp_original', '35'),
+(162, 4, '_wp_page_template', 'page-templates/page-nosotros.php'),
+(163, 4, 'mb_featured_banner', ''),
+(164, 4, 'mb_image_gallery', ',43,43,43'),
+(165, 4, 'theme_featured_item_check', 'off'),
+(166, 43, '_wp_attached_file', '2016/10/sample-nosotros.jpg'),
+(167, 43, 'wpmf_size', '71053'),
+(168, 43, 'wpmf_filetype', 'jpg'),
+(169, 43, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:640;s:6:"height";i:375;s:4:"file";s:27:"2016/10/sample-nosotros.jpg";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"sample-nosotros-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"sample-nosotros-300x176.jpg";s:5:"width";i:300;s:6:"height";i:176;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:27:"sample-nosotros-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:27:"sample-nosotros-597x350.jpg";s:5:"width";i:597;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:1:"7";s:8:"quantity";d:100;s:4:"webp";i:0;}}'),
+(170, 44, '_edit_last', '1'),
+(171, 44, '_edit_lock', '1478124405:1'),
+(172, 45, '_wp_attached_file', '2016/11/sample-marca.jpg'),
+(173, 45, 'wpmf_size', '3850'),
+(174, 45, 'wpmf_filetype', 'jpg'),
+(175, 45, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:247;s:6:"height";i:90;s:4:"file";s:24:"2016/11/sample-marca.jpg";s:5:"sizes";a:2:{s:9:"thumbnail";a:4:{s:4:"file";s:23:"sample-marca-150x90.jpg";s:5:"width";i:150;s:6:"height";i:90;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:23:"sample-marca-210x90.jpg";s:5:"width";i:210;s:6:"height";i:90;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:2:"21";s:8:"quantity";d:100;s:4:"webp";i:0;}}'),
+(176, 44, '_thumbnail_id', '45'),
+(177, 44, 'mbox_order_post', '1'),
+(178, 44, 'mb_image_gallery', ''),
+(179, 44, 'theme_featured_item_check', 'off'),
+(180, 46, '_edit_last', '1'),
+(181, 46, '_edit_lock', '1478124561:1'),
+(182, 46, '_thumbnail_id', '45'),
+(183, 46, 'mbox_order_post', '1'),
+(184, 46, 'mb_image_gallery', ''),
+(185, 46, 'theme_featured_item_check', 'off'),
+(186, 46, '_dp_original', '44'),
+(187, 47, '_wp_attached_file', '2016/11/sample-banner-page.jpg'),
+(188, 47, 'wpmf_size', '64684'),
+(189, 47, 'wpmf_filetype', 'jpg'),
+(190, 47, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:1000;s:6:"height";i:200;s:4:"file";s:30:"2016/11/sample-banner-page.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:30:"sample-banner-page-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:29:"sample-banner-page-300x60.jpg";s:5:"width";i:300;s:6:"height";i:60;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:30:"sample-banner-page-768x154.jpg";s:5:"width";i:768;s:6:"height";i:154;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:30:"sample-banner-page-210x200.jpg";s:5:"width";i:210;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:30:"sample-banner-page-784x157.jpg";s:5:"width";i:784;s:6:"height";i:157;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:1:"8";s:8:"quantity";d:100;s:4:"webp";i:0;}}'),
+(191, 48, '_menu_item_type', 'custom'),
+(192, 48, '_menu_item_menu_item_parent', '0'),
+(193, 48, '_menu_item_object_id', '48'),
+(194, 48, '_menu_item_object', 'custom'),
+(195, 48, '_menu_item_target', ''),
+(196, 48, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(197, 48, '_menu_item_xfn', ''),
+(198, 48, '_menu_item_url', '#'),
+(200, 49, '_menu_item_type', 'taxonomy'),
+(201, 49, '_menu_item_menu_item_parent', '0'),
+(202, 49, '_menu_item_object_id', '10'),
+(203, 49, '_menu_item_object', 'producto_category'),
+(204, 49, '_menu_item_target', ''),
+(205, 49, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(206, 49, '_menu_item_xfn', ''),
+(207, 49, '_menu_item_url', ''),
+(208, 49, '_menu_item_orphaned', '1478126989'),
+(209, 50, '_menu_item_type', 'taxonomy'),
+(210, 50, '_menu_item_menu_item_parent', '48'),
+(211, 50, '_menu_item_object_id', '11'),
+(212, 50, '_menu_item_object', 'producto_category'),
+(213, 50, '_menu_item_target', ''),
+(214, 50, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(215, 50, '_menu_item_xfn', ''),
+(216, 50, '_menu_item_url', ''),
+(217, 32, '_wp_old_slug', 'zapato-verona-w5c'),
+(218, 32, 'mb_size_product', 'S / M / L'),
+(219, 32, 'mb_colors_product', 'a:2:{i:0;a:2:{s:4:"text";s:5:"Coral";s:5:"color";s:7:"#dd8b8b";}i:1;a:2:{s:4:"text";s:5:"verde";s:5:"color";s:7:"#0a7f23";}}') ;
+INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(220, 51, '_wp_attached_file', '2016/11/sample-product2.jpg'),
+(221, 51, 'wpmf_size', '34021'),
+(222, 51, 'wpmf_filetype', 'jpg'),
+(223, 51, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:800;s:6:"height";i:533;s:4:"file";s:27:"2016/11/sample-product2.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"sample-product2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"sample-product2-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:27:"sample-product2-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:27:"sample-product2-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:27:"sample-product2-525x350.jpg";s:5:"width";i:525;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:2:"13";s:8:"quantity";d:100;s:4:"webp";i:0;}}') ;
 
 #
 # End of data contents of table `wp_postmeta`
@@ -503,7 +615,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -513,7 +625,7 @@ INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (1, 1, '2016-10-28 19:23:09', '2016-10-28 19:23:09', 'Bienvenido a WordPress. Esta es su primera entrada. Edítela o bórrela, y ¡empiece a escribir!', '¡Hola mundo!', '', 'publish', 'open', 'open', '', 'hola-mundo', '', '', '2016-10-28 19:23:09', '2016-10-28 19:23:09', '', 0, 'http://localhost/kayrel/?p=1', 0, 'post', '', 1),
 (2, 1, '2016-10-28 19:23:09', '2016-10-28 19:23:09', 'Esto es una página de ejemplo. Es diferente a una entrada del blog, ya que permanecerá fija en un lugar y se mostrará en la navegación de su sitio (en la mayoría de temas). La mayoría de personas empieza con una página Acerca de, que brinda información a los visitantes de su sitio. Se podría decir algo como esto:\n\n<blockquote>¡Hola! Durante el día soy un mensajero, un aspirante a actor por la noche, y este es mi blog. Vivo en Lima, tengo un enorme perro llamado Pocho, y me gusta el Pisco Sour. (Y caminar bajo la lluvia.)</blockquote>\n\n...o algo como esto:\n\n<blockquote>La compañía XYZ, se fundó en 1971, y ha estado desde entonces, proporcionando artilugios de calidad al público. Está situado en la ciudad de Lima, XYZ emplea a más de 2,000 personas y hace todo tipo de cosas sorprendentes para la comunidad limeña.</blockquote>\n\nComo nuevo usuario de WordPress, usted debe ir a <a href="http://localhost/kayrel/wp-admin/">su panel</a> para eliminar esta página y crear nuevas para su contenido. ¡Que se divierta!', 'Inicio', '', 'publish', 'closed', 'closed', '', 'inicio', '', '', '2016-10-28 23:16:14', '2016-10-28 23:16:14', '', 0, 'http://localhost/kayrel/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2016-10-28 19:23:24', '0000-00-00 00:00:00', '', 'Borrador automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2016-10-28 19:23:24', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=3', 0, 'post', '', 0),
-(4, 1, '2016-10-28 21:35:30', '2016-10-28 21:35:30', '', 'Nosotros', '', 'publish', 'closed', 'closed', '', 'nosotros', '', '', '2016-10-28 21:36:05', '2016-10-28 21:36:05', '', 0, 'http://localhost/kayrel/?page_id=4', 0, 'page', '', 0),
+(4, 1, '2016-10-28 21:35:30', '2016-10-28 21:35:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase"></h2>\r\n&nbsp;\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase"></h2>\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'publish', 'closed', 'closed', '', 'nosotros', '', '', '2016-11-02 21:28:13', '2016-11-02 21:28:13', '', 0, 'http://localhost/kayrel/?page_id=4', 0, 'page', '', 0),
 (5, 1, '2016-10-28 21:35:30', '2016-10-28 21:35:30', '', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-10-28 21:35:30', '2016-10-28 21:35:30', '', 4, 'http://localhost/kayrel/2016/10/28/4-revision-v1/', 0, 'revision', '', 0),
 (6, 1, '2016-10-28 23:16:14', '2016-10-28 23:16:14', 'Esto es una página de ejemplo. Es diferente a una entrada del blog, ya que permanecerá fija en un lugar y se mostrará en la navegación de su sitio (en la mayoría de temas). La mayoría de personas empieza con una página Acerca de, que brinda información a los visitantes de su sitio. Se podría decir algo como esto:\n\n<blockquote>¡Hola! Durante el día soy un mensajero, un aspirante a actor por la noche, y este es mi blog. Vivo en Lima, tengo un enorme perro llamado Pocho, y me gusta el Pisco Sour. (Y caminar bajo la lluvia.)</blockquote>\n\n...o algo como esto:\n\n<blockquote>La compañía XYZ, se fundó en 1971, y ha estado desde entonces, proporcionando artilugios de calidad al público. Está situado en la ciudad de Lima, XYZ emplea a más de 2,000 personas y hace todo tipo de cosas sorprendentes para la comunidad limeña.</blockquote>\n\nComo nuevo usuario de WordPress, usted debe ir a <a href="http://localhost/kayrel/wp-admin/">su panel</a> para eliminar esta página y crear nuevas para su contenido. ¡Que se divierta!', 'Inicio', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2016-10-28 23:16:14', '2016-10-28 23:16:14', '', 2, 'http://localhost/kayrel/2016/10/28/2-revision-v1/', 0, 'revision', '', 0),
 (7, 1, '2016-10-28 23:16:24', '2016-10-28 23:16:24', '', 'Mujer', '', 'publish', 'closed', 'closed', '', 'mujer', '', '', '2016-10-28 23:16:27', '2016-10-28 23:16:27', '', 0, 'http://localhost/kayrel/?page_id=7', 0, 'page', '', 0),
@@ -524,19 +636,42 @@ INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (12, 1, '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 'Niños', '', 'inherit', 'closed', 'closed', '', '11-revision-v1', '', '', '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 11, 'http://localhost/kayrel/2016/10/28/11-revision-v1/', 0, 'revision', '', 0),
 (13, 1, '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 'Galería', '', 'publish', 'closed', 'closed', '', 'galeria', '', '', '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 0, 'http://localhost/kayrel/?page_id=13', 0, 'page', '', 0),
 (14, 1, '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 'Galería', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 13, 'http://localhost/kayrel/2016/10/28/13-revision-v1/', 0, 'revision', '', 0),
-(15, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 0, 'http://localhost/kayrel/?page_id=15', 0, 'page', '', 0),
+(15, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2016-11-02 17:44:02', '2016-11-02 17:44:02', '', 0, 'http://localhost/kayrel/?page_id=15', 0, 'page', '', 0),
 (16, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'inherit', 'closed', 'closed', '', '15-revision-v1', '', '', '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 15, 'http://localhost/kayrel/2016/10/28/15-revision-v1/', 0, 'revision', '', 0),
 (17, 1, '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 'Contáctanos', '', 'publish', 'closed', 'closed', '', 'contactanos', '', '', '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 0, 'http://localhost/kayrel/?page_id=17', 0, 'page', '', 0),
 (18, 1, '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 'Contáctanos', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 17, 'http://localhost/kayrel/2016/10/28/17-revision-v1/', 0, 'revision', '', 0),
 (19, 1, '2016-10-28 23:21:48', '0000-00-00 00:00:00', '', 'Inicio', '', 'draft', 'closed', 'closed', '', '', '', '', '2016-10-28 23:21:48', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=19', 1, 'nav_menu_item', '', 0),
-(20, 1, '2016-10-28 23:22:30', '2016-10-28 23:22:30', ' ', '', '', 'publish', 'closed', 'closed', '', '20', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=20', 7, 'nav_menu_item', '', 0),
-(21, 1, '2016-10-28 23:22:30', '2016-10-28 23:22:30', ' ', '', '', 'publish', 'closed', 'closed', '', '21', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=21', 8, 'nav_menu_item', '', 0),
-(22, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', '', 'Galerías', '', 'publish', 'closed', 'closed', '', 'galerias', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=22', 6, 'nav_menu_item', '', 0),
-(23, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '23', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=23', 1, 'nav_menu_item', '', 0),
-(24, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '24', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=24', 3, 'nav_menu_item', '', 0),
-(25, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '25', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=25', 5, 'nav_menu_item', '', 0),
-(26, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '26', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=26', 2, 'nav_menu_item', '', 0),
-(27, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '27', '', '', '2016-10-28 23:22:34', '2016-10-28 23:22:34', '', 0, 'http://localhost/kayrel/?p=27', 4, 'nav_menu_item', '', 0) ;
+(20, 1, '2016-10-28 23:22:30', '2016-10-28 23:22:30', ' ', '', '', 'publish', 'closed', 'closed', '', '20', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=20', 8, 'nav_menu_item', '', 0),
+(21, 1, '2016-10-28 23:22:30', '2016-10-28 23:22:30', ' ', '', '', 'publish', 'closed', 'closed', '', '21', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=21', 9, 'nav_menu_item', '', 0),
+(22, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', '', 'Galerías', '', 'publish', 'closed', 'closed', '', 'galerias', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=22', 7, 'nav_menu_item', '', 0),
+(23, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '23', '', '', '2016-11-02 22:51:08', '2016-11-02 22:51:08', '', 0, 'http://localhost/kayrel/?p=23', 1, 'nav_menu_item', '', 0),
+(25, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '25', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=25', 6, 'nav_menu_item', '', 0),
+(26, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '26', '', '', '2016-11-02 22:51:08', '2016-11-02 22:51:08', '', 0, 'http://localhost/kayrel/?p=26', 2, 'nav_menu_item', '', 0),
+(27, 1, '2016-10-28 23:22:29', '2016-10-28 23:22:29', ' ', '', '', 'publish', 'closed', 'closed', '', '27', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=27', 5, 'nav_menu_item', '', 0),
+(28, 1, '2016-11-01 17:22:13', '2016-11-01 17:22:13', 'exclusivos', '100% cuero', '', 'publish', 'open', 'closed', '', '100-cuero', '', '', '2016-11-01 17:23:18', '2016-11-01 17:23:18', '', 0, 'http://localhost/kayrel/?post_type=theme-slider-home&#038;p=28', 0, 'theme-slider-home', '', 0),
+(29, 1, '2016-11-01 17:21:52', '2016-11-01 17:21:52', '', 'slider_sample', '', 'inherit', 'open', 'closed', '', 'slider_sample', '', '', '2016-11-01 17:21:52', '2016-11-01 17:21:52', '', 28, 'http://localhost/kayrel/wp-content/uploads/2016/11/slider_sample.jpg', 0, 'attachment', 'image/jpeg', 0),
+(30, 1, '2016-11-01 17:22:25', '2016-11-01 17:22:25', 'exclusivos', '100% cuero 2', '', 'publish', 'open', 'closed', '', '100-cuero-2', '', '', '2016-11-01 17:22:47', '2016-11-01 17:22:47', '', 0, 'http://localhost/kayrel/?post_type=theme-slider-home&#038;p=30', 0, 'theme-slider-home', '', 0),
+(31, 1, '2016-11-01 17:51:14', '2016-11-01 17:51:14', '', 'pdf-sample', '', 'inherit', 'open', 'closed', '', 'pdf-sample', '', '', '2016-11-01 17:51:14', '2016-11-01 17:51:14', '', 0, 'http://localhost/kayrel/wp-content/uploads/2016/11/pdf-sample-1.pdf', 0, 'attachment', 'application/pdf', 0),
+(32, 1, '2016-11-02 17:36:16', '2016-11-02 17:36:16', 'Material Algodón - Prima', 'Zapato Verona W5c 1', '', 'publish', 'open', 'closed', '', 'zapato-verona-w5c-1', '', '', '2016-11-03 21:46:04', '2016-11-03 21:46:04', '', 0, 'http://localhost/kayrel/?post_type=theme-products&#038;p=32', 0, 'theme-products', '', 0),
+(33, 1, '2016-11-02 17:35:54', '2016-11-02 17:35:54', '', 'sample-product', '', 'inherit', 'open', 'closed', '', 'sample-product', '', '', '2016-11-02 17:35:54', '2016-11-02 17:35:54', '', 32, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-product.jpg', 0, 'attachment', 'image/jpeg', 0),
+(34, 1, '2016-11-02 18:17:52', '2016-11-02 18:17:52', '', 'Zapato Verona W5c', '', 'publish', 'open', 'closed', '', 'zapato-verona-w5c-2', '', '', '2016-11-03 17:16:57', '2016-11-03 17:16:57', '', 0, 'http://localhost/kayrel/?post_type=theme-products&#038;p=34', 0, 'theme-products', '', 0),
+(35, 1, '2016-11-02 18:18:07', '2016-11-02 18:18:07', '', 'Zapato Verona W5c', '', 'publish', 'open', 'closed', '', 'zapato-verona-w5c-3', '', '', '2016-11-03 17:16:57', '2016-11-03 17:16:57', '', 0, 'http://localhost/kayrel/?post_type=theme-products&#038;p=35', 0, 'theme-products', '', 0),
+(36, 1, '2016-11-02 18:18:17', '2016-11-02 18:18:17', '', 'Zapato Verona W5c', '', 'publish', 'open', 'closed', '', 'zapato-verona-w5c-4', '', '', '2016-11-03 17:17:09', '2016-11-03 17:17:09', '', 0, 'http://localhost/kayrel/?post_type=theme-products&#038;p=36', 0, 'theme-products', '', 0),
+(37, 1, '2016-11-02 21:08:01', '2016-11-02 21:08:01', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:08:01', '2016-11-02 21:08:01', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(38, 1, '2016-11-02 21:20:19', '2016-11-02 21:20:19', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:20:19', '2016-11-02 21:20:19', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(39, 1, '2016-11-02 21:22:45', '2016-11-02 21:22:45', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:22:45', '2016-11-02 21:22:45', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(40, 1, '2016-11-02 21:23:18', '2016-11-02 21:23:18', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:23:18', '2016-11-02 21:23:18', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(41, 1, '2016-11-02 21:23:34', '2016-11-02 21:23:34', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase"></h2>\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase"></h2>\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:23:34', '2016-11-02 21:23:34', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(42, 1, '2016-11-02 21:24:07', '2016-11-02 21:24:07', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase"></h2>\r\n&nbsp;\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase"></h2>\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'inherit', 'closed', 'closed', '', '4-revision-v1', '', '', '2016-11-02 21:24:07', '2016-11-02 21:24:07', '', 4, 'http://localhost/kayrel/2016/11/02/4-revision-v1/', 0, 'revision', '', 0),
+(43, 1, '2016-11-02 21:27:47', '2016-11-02 21:27:47', '', 'sample-nosotros', '', 'inherit', 'open', 'closed', '', 'sample-nosotros', '', '', '2016-11-02 21:27:47', '2016-11-02 21:27:47', '', 4, 'http://localhost/kayrel/wp-content/uploads/2016/10/sample-nosotros.jpg', 0, 'attachment', 'image/jpeg', 0),
+(44, 1, '2016-11-02 22:08:30', '2016-11-02 22:08:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.', 'Marca 1', '', 'publish', 'open', 'closed', '', 'marca-1', '', '', '2016-11-02 22:08:30', '2016-11-02 22:08:30', '', 0, 'http://localhost/kayrel/?post_type=theme-branding&#038;p=44', 0, 'theme-branding', '', 0),
+(45, 1, '2016-11-02 22:07:07', '2016-11-02 22:07:07', '', 'sample-marca', '', 'inherit', 'open', 'closed', '', 'sample-marca', '', '', '2016-11-02 22:07:07', '2016-11-02 22:07:07', '', 44, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-marca.jpg', 0, 'attachment', 'image/jpeg', 0),
+(46, 1, '2016-11-02 22:09:13', '2016-11-02 22:09:13', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.', 'Marca 2', '', 'publish', 'open', 'closed', '', 'marca-2', '', '', '2016-11-02 22:09:21', '2016-11-02 22:09:21', '', 0, 'http://localhost/kayrel/?post_type=theme-branding&#038;p=46', 0, 'theme-branding', '', 0),
+(47, 1, '2016-11-02 22:48:07', '2016-11-02 22:48:07', '', 'sample-banner-page', '', 'inherit', 'open', 'closed', '', 'sample-banner-page', '', '', '2016-11-02 22:48:07', '2016-11-02 22:48:07', '', 0, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-banner-page.jpg', 0, 'attachment', 'image/jpeg', 0),
+(48, 1, '2016-11-02 22:49:56', '2016-11-02 22:49:56', '', 'Mujer', '', 'publish', 'closed', 'closed', '', 'mujer', '', '', '2016-11-02 22:51:08', '2016-11-02 22:51:08', '', 0, 'http://localhost/kayrel/?p=48', 3, 'nav_menu_item', '', 0),
+(49, 1, '2016-11-02 22:49:49', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2016-11-02 22:49:49', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=49', 1, 'nav_menu_item', '', 0),
+(50, 1, '2016-11-02 22:51:09', '2016-11-02 22:51:09', ' ', '', '', 'publish', 'closed', 'closed', '', '50', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 10, 'http://localhost/kayrel/?p=50', 4, 'nav_menu_item', '', 0),
+(51, 1, '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 'sample-product2', '', 'inherit', 'open', 'closed', '', 'sample-product2', '', '', '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 32, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-product2.jpg', 0, 'attachment', 'image/jpeg', 0) ;
 
 #
 # End of data contents of table `wp_posts`
@@ -573,10 +708,23 @@ INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id`, `term_ord
 (21, 3, 0),
 (22, 3, 0),
 (23, 3, 0),
-(24, 3, 0),
 (25, 3, 0),
 (26, 3, 0),
-(27, 3, 0) ;
+(27, 3, 0),
+(29, 4, 0),
+(31, 5, 0),
+(32, 11, 0),
+(32, 12, 0),
+(33, 6, 0),
+(34, 11, 0),
+(35, 11, 0),
+(36, 11, 0),
+(43, 8, 0),
+(45, 9, 0),
+(47, 7, 0),
+(48, 3, 0),
+(50, 3, 0),
+(51, 6, 0) ;
 
 #
 # End of data contents of table `wp_term_relationships`
@@ -605,7 +753,7 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -613,8 +761,16 @@ CREATE TABLE `wp_term_taxonomy` (
 #
 INSERT INTO `wp_term_taxonomy` ( `term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 1),
-(2, 2, 'wpmf-category', '', 0, 0),
-(3, 3, 'nav_menu', '', 0, 8) ;
+(3, 3, 'nav_menu', '', 0, 9),
+(4, 4, 'wpmf-category', '', 0, 1),
+(5, 5, 'wpmf-category', '', 0, 0),
+(6, 6, 'wpmf-category', '', 0, 2),
+(7, 7, 'wpmf-category', '', 0, 0),
+(8, 8, 'wpmf-category', '', 0, 1),
+(9, 9, 'wpmf-category', '', 0, 0),
+(10, 10, 'producto_category', '', 0, 0),
+(11, 11, 'producto_category', '', 10, 4),
+(12, 12, 'producto_category', '', 10, 1) ;
 
 #
 # End of data contents of table `wp_term_taxonomy`
@@ -641,12 +797,22 @@ CREATE TABLE `wp_termmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `term_id` (`term_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
 # Data contents of table `wp_termmeta`
 #
+INSERT INTO `wp_termmeta` ( `meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
+(1, 10, 'meta_order_taxonomy', '1'),
+(2, 10, 'meta_images_taxonomy', '-1,47,47,47'),
+(3, 10, 'meta_color_taxonomy', '#ff385e'),
+(4, 11, 'meta_order_taxonomy', '1'),
+(5, 11, 'meta_images_taxonomy', ''),
+(6, 11, 'meta_color_taxonomy', '#000000'),
+(7, 12, 'meta_order_taxonomy', '2'),
+(8, 12, 'meta_images_taxonomy', ''),
+(9, 12, 'meta_color_taxonomy', '') ;
 
 #
 # End of data contents of table `wp_termmeta`
@@ -673,7 +839,7 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -681,8 +847,16 @@ CREATE TABLE `wp_terms` (
 #
 INSERT INTO `wp_terms` ( `term_id`, `name`, `slug`, `term_group`) VALUES
 (1, 'Sin categoría', 'sin-categoria', 0),
-(2, 'Sin categoría', 'sin-categoria', 0),
-(3, 'Menú Principal', 'menu-principal', 0) ;
+(3, 'Menú Principal', 'menu-principal', 0),
+(4, 'SLIDER HOME', 'slider-home', 1),
+(5, 'PDF - CATALOGOS - BROCHURE', 'pdf-catalogos-brochure', 1),
+(6, 'PRODUCTOS', 'productos', 1),
+(7, 'BANNER PÁGINAS', 'banner-paginas', 1),
+(8, 'GALERÍA NOSOTROS', 'galeria-nosotros', 1),
+(9, 'MARCAS', 'marcas', 1),
+(10, 'Mujer', 'mujer', 0),
+(11, 'Casual', 'casual', 0),
+(12, 'Elegante', 'elegante', 0) ;
 
 #
 # End of data contents of table `wp_terms`
@@ -709,7 +883,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -729,13 +903,16 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:1:{s:64:"62b894e346445a9c799259f1bea0291c5c92cfaaed4c2d4ab6152aaa8b770e80";a:4:{s:10:"expiration";i:1477855401;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1477682601;}}'),
+(14, 1, 'session_tokens', 'a:6:{s:64:"78d82ce7fdc49cc19570ae8c7c1882741df9b241c8d9db64c3451c9c503da01e";a:4:{s:10:"expiration";i:1478193390;s:2:"ip";s:3:"::1";s:2:"ua";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478020590;}s:64:"d05e58f7909a918ba8cf2817f31552b1d1e5330df5e92932da8b1f7d02939fed";a:4:{s:10:"expiration";i:1478236824;s:2:"ip";s:3:"::1";s:2:"ua";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478064024;}s:64:"28aa7d3ea81fbccd81abecc28382728c0c66ce1532c46bf2efc4f7347ae57308";a:4:{s:10:"expiration";i:1478276968;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478104168;}s:64:"59c3c0c9e5e6ceaae816513117c53d2e64187388505b62725792a41cb096a355";a:4:{s:10:"expiration";i:1478276973;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478104173;}s:64:"ee3f914b81be205ff6872b187a39d3058efedd0763e23b69bced5cf5baf3ed3b";a:4:{s:10:"expiration";i:1478359491;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186691;}s:64:"f0ae4532179b134c9ba12b24df373b90bb1a02a32c90df6b9e927c9bfe08c8ae";a:4:{s:10:"expiration";i:1478359542;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186742;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'closedpostboxes_page', 'a:0:{}'),
 (17, 1, 'metaboxhidden_page', 'a:4:{i:0;s:10:"postcustom";i:1;s:16:"commentstatusdiv";i:2;s:7:"slugdiv";i:3;s:9:"authordiv";}'),
 (18, 1, '_clear_post_cache_on_update', '0'),
 (19, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
-(20, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:"add-post_tag";}') ;
+(20, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:"add-post_tag";}'),
+(21, 1, 'wp_user-settings', 'libraryContent=browse&hidetb=1&editor=tinymce'),
+(22, 1, 'wp_user-settings-time', '1478121810'),
+(23, 1, 'nav_menu_recently_edited', '3') ;
 
 #
 # End of data contents of table `wp_usermeta`

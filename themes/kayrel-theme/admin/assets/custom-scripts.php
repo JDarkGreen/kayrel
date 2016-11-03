@@ -48,6 +48,19 @@ function load_admin_custom_enqueue() {
 	//Imágen Simple
 	wp_enqueue_script('wp-js-upload-single-image', THEMEROOT . '/admin/assets/js/upload-single-image.js', array('jquery' ), '', true);
 
+	/*
+	 * JS ELEMENTOS CON COLOR PICKER
+	 */
+	wp_enqueue_style( 'wp-color-picker');
+	wp_enqueue_script( 'wp-color-picker');
+	wp_enqueue_script('wp-js-colorpicker', THEMEROOT . '/admin/assets/js/wpcolorpicker-input.js', array('jquery' ), '', true);
+
+	/*
+	 * JS CARGAR ELEMENTOS DINÁMICAMENTE
+	 */
+	wp_enqueue_script('wp-js-elements-dinamyc', THEMEROOT . '/admin/assets/js/elements-dinamyc.js', array('jquery' ), '', true);
+
+
 }
 
 add_action('admin_enqueue_scripts', 'load_admin_custom_enqueue');

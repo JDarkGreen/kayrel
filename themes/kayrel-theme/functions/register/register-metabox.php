@@ -52,3 +52,13 @@ if( stream_resolve_include_path($path_slider_rev) )
 $path_product_code = realpath( dirname(dirname(__FILE__)) . '/metabox/product/mb_product_code.php' );
 if( stream_resolve_include_path($path_product_code) )
 	include($path_product_code);
+
+/**[ INCLUIR METABOX DE TALLAS ]**/
+$path_product_sizes = realpath( dirname(dirname(__FILE__)) . '/metabox/product/mb_product_sizes.php' );
+if( stream_resolve_include_path($path_product_sizes) )
+	include($path_product_sizes);
+
+/**[ INCLUIR METABOX DE COLORES ]**/
+$path_product_colors = realpath( dirname(dirname(__FILE__)) . '/metabox/product/mb_product_colors.php' );
+if( stream_resolve_include_path($path_product_colors) )
+	include($path_product_colors);

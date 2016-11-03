@@ -18,13 +18,22 @@
 .space-between 
 	justify-content : space-between 
 
+
+/*
+ * POSICIONES 
+ */
+
+//Relativo
+.relative 
+	position: relative 
+
 /*
  * WRAPPER O CONTENEDORES CON MEDIDA
  */
 
 //Contenedor de Contenido Página
 .pageContentLayout
-	padding : 80px 0
+	padding : 45px 0
 
 .wrapperLayoutPage
 	display  : block 
@@ -72,3 +81,144 @@
 		width  : 14px
 		&.hover , &.active 
 			background: #FF385E
+
+/*
+ * BANNER DE PÁGINAS Y / O TAXONOMÍAS
+ */
+
+//Títulos
+.title-banner-tax
+	background : #666666
+	bottom     : 18px 
+	color      : white 
+	font-family: "Helvetica57"
+	font-size  : 27px
+	line-height: 1
+	margin     : 0
+	padding    : 13px 60px
+	position   : absolute 
+	right      : 193px 
+	z-index    : 9999
+
+//Flechas
+.arrow-banner-tax
+	height     : 58px
+	position   : absolute
+	text-indent: -2000px
+	top        : 42%
+	width      : 34px
+	z-index    : 999
+	+transition(all 500ms ease)
+	//hover 
+	&:hover 
+		+opacity(.7)
+
+.arrow-banner-tax--prev
+	background: url('../images/arrow-left.png') no-repeat
+	left      : 0
+.arrow-banner-tax--next
+	background: url('../images/arrow-right.png') no-repeat
+	right     : 0
+
+/*
+ * BREADCRUMBS
+ */
+#breadcrumbs
+	color          : black 
+	font-family    : "Helvetica57"
+	list-style-type: none
+	margin         : 16px 0 
+	padding        : 0 
+	li 
+		display  : inline-block 
+		font-size: 15px
+		padding  : 0 24px 0 0
+		position : relative 
+		//after
+		&:after 
+			+translate(-50%,-50%)
+			color      : black 
+			content    : ">"
+			font-size  : 13px 
+			line-height: 1em
+			position   : absolute
+			right      : 3px
+			top        : 50%
+		//last element
+		&:last-child 
+			&:after 
+				content : ''
+		a 
+			color          : black 
+			display        : block 
+			text-decoration: none 
+			+transition( all 500ms ease )
+			//hover
+			&:hover 
+				color : #FF385E
+
+
+/*
+ * PAGINADOR 
+ */
+.sectionPagination
+	margin : 20px auto 0
+	a 
+		color          : black 
+		margin         : 0 2px 0 0
+		padding        : 4px 
+		text-decoration: none !important 
+		+transition( all 500ms ease )
+
+		//hover  and active 
+		&:hover , &.active
+			background : #FF385E
+
+		//disabled 
+		&.disabled
+			+opacity(.9)
+			cursor  : none 
+			position: relative 
+			z-index : -9
+
+/* 
+ * COMPARTIR - SECCION SINGLE /PAGE
+ */
+.sectionCommonShareLinks
+	ul 
+		list-style-type: none 
+		margin         : 0
+		padding        : 0
+		li 
+			display: inline-block
+			padding: 0 2px
+			//Primer Elemento
+			&:first-child
+				font-size: 15px 
+				padding  : 0 10px 0 0
+			//Item - a 
+			a 
+				background     : #E3E8E9 
+				color          : #A6A6A8
+				display        : inline-block 
+				height         : 21px 
+				justify-content: center  
+				text-align     : center
+				text-decoration: none 
+				width          : 21px
+				+transition( all 500ms ease-in-out )
+				//Hover
+				&:hover
+					color: white
+				//Clases Internas
+				&.social--fb
+					&:hover 
+						background: #11539C
+				&.social--tw
+					&:hover 
+						background: #00ACED
+				&.social--gplus
+					&:hover 
+						background: #DB4A39
+
+

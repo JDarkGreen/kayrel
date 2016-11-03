@@ -200,6 +200,62 @@ function sendDataFormularybyAjax( formulario )
 }
 
 
+/*|----------------------------------------------------------------------|*/
+/*|-----  ELEVATEZOOM - ZOOM TO ELEMENTS   -----|*/
+/*|----------------------------------------------------------------------|*/
+function zoomtoItems()
+{
+	j(document).find('.elevatezoom-js').each(function(index,value){
+
+		j(this).elevateZoom({
+			easing           : true,
+			lensFadeIn       : 500,
+			lensFadeOut      : 500,
+			zoomWindowFadeIn : 500,
+			zoomWindowFadeOut: 500,
+			zoomWindowHeight : 315,
+			zoomWindowWidth  : 315,
+		});
+
+	});
+}
+
+
+function changeImagesItem()
+{
+
+	j(document).on('click' , '.js-change-image' , function(e){
+
+		e.preventDefault(); 
+
+		var this_item = j(this);
+
+		//Obtener la url de imagen
+		var this_image = this_item.find('img');
+		var url_image  = this_image.attr('src');
+		//Obtener el texto alternativo 
+		var alt_image  = this_image.attr('alt');	
+		//Obtener las clases
+		var class_image = this_image.attr('class');
+
+		//Obtener y Setear dentro del div de imagen objetivo
+		var div_target = this_item.attr('data-target');
+
+		if( j('#'+div_target).length ){
+			//asignar contenedor padre
+			var container_image = j('#'+div_target);
+
+			//vaciar elementos
+			container_image
+			.html('')
+			.html('<img src='+url_image+' data-zoom-image='+url_image+' alt='+alt_image+' class="elevatezoom-js '+ class_image +'" />');
+		}
+
+		zoomtoItems();
+
+	});
+
+}
 
 
 (function($){
@@ -252,6 +308,14 @@ function sendDataFormularybyAjax( formulario )
 		/*
 		 *  Llamar a función menú mobile 
 		 */
+
+		/*
+		 *  Función Zoom Elementos
+		 */
+		zoomtoItems();
+
+		//Funcion Cambiar Imágenes
+		changeImagesItem();
 
 
 

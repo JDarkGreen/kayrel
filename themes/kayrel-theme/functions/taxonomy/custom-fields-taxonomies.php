@@ -56,7 +56,7 @@ function theme_add_images( $value_images = "" )
                         //convertir en arreglo
                         $value_images = explode(',', $value_images ); 
                         //eliminar valores negativos
-                        $value_images = array_diff( $value_images , array(-1) );
+                        $value_images = array_diff( $value_images , array(-1,'-1') );
                         //Eliminar espacios en blanco 
                         $value_images = array_filter( $value_images , function($var) {
                             return trim($var);
@@ -65,8 +65,10 @@ function theme_add_images( $value_images = "" )
                         #Recorrido de id de imagenes
                         foreach ( $value_images as $meta_img_id ) : 
 
-                            #Conseguir todos los datos de este item
-                            $item = get_post( $meta_img_id ); ?>
+                        #Conseguir todos los datos de este item
+                        $item = get_post( $meta_img_id ); 
+
+                        if( !empty($item) ) : ?>
 
                         <!-- Nota: colocar data-id-img es referente al id de la imagen -->
                         <li class='ui-state-default' data-id-element="<?= $item->ID ?>">
@@ -85,7 +87,7 @@ function theme_add_images( $value_images = "" )
 
                         </li> <!-- end figure -->
 
-                    <?php endforeach; ?>
+                    <?php endif; endforeach; ?>
     
                 </ul> <!--/.js-containerSortableGallery -->
 
@@ -223,16 +225,12 @@ function save_taxonomy_custom_fields( $term_id ) {
         #Actualizar valor
         update_term_meta( $term_id , 'meta_color_taxonomy' , $_POST['theme_tax_color'] );
     endif;
-
-
-
 }
 
 
-
-/**
-** Agregamos los hooks necesarios solo a la taxonomía Categoría
-*/
+/*
+ * Agregamos los hooks necesarios solo a la taxonomía Categoría
+ */
 
 // Agregue hooks para mostrar en la página de seteo 
 add_action( 'category_add_form_fields', 'theme_taxonomy_add_custom_fields');

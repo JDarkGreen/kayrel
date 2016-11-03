@@ -38,10 +38,10 @@
 		padding    : 0 0 13px 
 		h2 
 			margin   : 0 auto 5px 
-			font-size: 18px 
+			font-size: 15px 
 		span 
 			display  : block 
-			font-size: 18px 
+			font-size: 15px 
 
 	//cuartos y ultimos elementos 
 	&:nth-child(4n) , &:last-child
@@ -68,7 +68,7 @@
 	color          : black 
 	display        : block 
 	font-family    : "Arial" , sans-serif 
-	font-size      : 15px 
+	font-size      : 14px 
 	margin         : 0 auto 
 	padding        : 6px 0 
 	text-decoration: none !important 
@@ -77,3 +77,45 @@
 	&:hover 
 		+box-shadow( inset 300px 0 0 0 black )
 		color: white 
+
+//Single Detail Product
+.singleDetailProduct
+	
+	//Imágen Destacada
+	.featured-image 
+		border : 1px solid #C5C5C5
+
+	//Indicadores de galería
+	.gallery_indicator 
+		border    : 1px solid #C5C5C5
+		box-sizing: border-box
+		display   : inline-block 
+		padding   : 1px
+
+//Título de Producto
+.productTitle
+	font-family: 'Helvetica57'
+	font-size  : 30px
+	font-weight: 600
+//Codigo
+.productCode
+	font-family: 'Helvetica57'
+	font-size  : 18px
+	font-weight: 600
+
+//Detalles Títulos
+.detailTitle
+	font-size  : 20px
+	font-family: 'Helvetica57'
+	font-weight: 600
+
+//Item color
+.item-color
+	i
+		+border-radius(50%)
+		border        : 0.5px solid rgba(0,0,0,.1)
+		display       : inline-block 
+		height        : 15px 
+		margin        : 0 5px 0 0
+		vertical-align: middle  
+		width         : 15px
