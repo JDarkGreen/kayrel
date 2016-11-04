@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Thursday 3. November 2016 23:20 UTC
+# Generated: Friday 4. November 2016 22:53 UTC
 # Hostname: localhost
 # Database: `kayrel`
 # --------------------------------------------------------
@@ -149,7 +149,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=395 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=428 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -260,11 +260,11 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (101, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (102, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (103, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(104, 'cron', 'a:6:{i:1478244190;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478244246;a:1:{s:36:"check_plugin_updates-wp-media-folder";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478287430;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478292026;a:1:{s:15:"ao_cachechecker";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478295296;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(104, 'cron', 'a:6:{i:1478330590;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478330646;a:1:{s:36:"check_plugin_updates-wp-media-folder";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1478373830;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478378426;a:1:{s:15:"ao_cachechecker";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1478381696;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (121, 'can_compress_scripts', '1', 'no'),
 (138, 'recently_activated', 'a:1:{s:31:"cache-enabler/cache-enabler.php";i:1478187032;}', 'yes'),
 (140, 'wpmf_use_taxonomy', '1', 'yes'),
-(141, 'rrrlgvwr_options', 'a:15:{s:21:"plugin_option_version";s:5:"1.0.4";s:21:"php_error_log_visible";i:0;s:11:"lines_count";i:10;s:16:"confirm_filesize";i:0;s:14:"error_log_path";s:0:"";s:17:"count_visible_log";i:1;s:14:"frequency_send";i:1;s:8:"hour_day";i:3600;s:23:"display_settings_notice";i:1;s:22:"suggest_feature_banner";i:1;s:13:"first_install";i:1478187038;s:19:"go_settings_counter";i:1;s:9:"file_path";a:1:{i:1;s:77:"C:/xampp/htdocs/kayrel/wp-content/plugins/error-log-viewer/log/php-errors.log";}s:20:"0_php-errors_visible";i:1;s:10:"send_email";i:0;}', 'yes'),
+(141, 'rrrlgvwr_options', 'a:15:{s:21:"plugin_option_version";s:5:"1.0.4";s:21:"php_error_log_visible";i:0;s:11:"lines_count";s:2:"10";s:16:"confirm_filesize";i:0;s:14:"error_log_path";s:77:"C:/xampp/htdocs/kayrel/wp-content/plugins/error-log-viewer/log/php-errors.log";s:17:"count_visible_log";i:1;s:14:"frequency_send";i:1;s:8:"hour_day";i:3600;s:23:"display_settings_notice";i:1;s:22:"suggest_feature_banner";i:1;s:13:"first_install";i:1478187038;s:19:"go_settings_counter";i:1;s:9:"file_path";a:1:{i:1;s:77:"C:/xampp/htdocs/kayrel/wp-content/plugins/error-log-viewer/log/php-errors.log";}s:20:"0_php-errors_visible";i:1;s:10:"send_email";i:0;}', 'yes'),
 (145, 'bstwbsftwppdtplgns_options', 'a:1:{s:8:"bws_menu";a:1:{s:7:"version";a:1:{s:37:"error-log-viewer/error-log-viewer.php";s:5:"1.9.0";}}}', 'yes'),
 (146, 'duplicate_post_copyexcerpt', '1', 'yes'),
 (147, 'duplicate_post_copyattachments', '0', 'yes'),
@@ -296,7 +296,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (173, 'wpmf_weight_selected', '[["0-61440","kB"],["61440-122880","kB"],["122880-184320","kB"],["184320-245760","kB"],["245760-307200","kB"]]', 'yes'),
 (174, 'wpmf_color_singlefile', '{"bgdownloadlink":"#444444","hvdownloadlink":"#888888","fontdownloadlink":"#ffffff","hoverfontcolor":"#ffffff"}', 'yes'),
 (175, 'wpmf_option_singlefile', '0', 'yes'),
-(176, 'external_updates-wp-media-folder', 'O:8:"stdClass":3:{s:9:"lastCheck";i:1478192945;s:14:"checkedVersion";s:5:"3.3.3";s:6:"update";O:8:"stdClass":7:{s:2:"id";i:0;s:4:"slug";s:15:"wp-media-folder";s:7:"version";s:5:"3.8.4";s:8:"homepage";s:61:"https://www.joomunited.com/wordpress-products/wp-media-folder";s:12:"download_url";s:120:"https://www.joomunited.com/index.php?option=com_juupdater&task=download.download&extension=wp-media-folder&version=3.8.4";s:14:"upgrade_notice";s:29:"Upgrade to the latest version";s:8:"filename";s:35:"wp-media-folder/wp-media-folder.php";}}', 'no'),
+(176, 'external_updates-wp-media-folder', 'O:8:"stdClass":3:{s:9:"lastCheck";i:1478273609;s:14:"checkedVersion";s:5:"3.3.3";s:6:"update";O:8:"stdClass":7:{s:2:"id";i:0;s:4:"slug";s:15:"wp-media-folder";s:7:"version";s:5:"3.8.4";s:8:"homepage";s:61:"https://www.joomunited.com/wordpress-products/wp-media-folder";s:12:"download_url";s:120:"https://www.joomunited.com/index.php?option=com_juupdater&task=download.download&extension=wp-media-folder&version=3.8.4";s:14:"upgrade_notice";s:29:"Upgrade to the latest version";s:8:"filename";s:35:"wp-media-folder/wp-media-folder.php";}}', 'no'),
 (179, '_wpmf_import_notice_flag', 'yes', 'yes'),
 (180, 'theme_mods_twentysixteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1477683684;s:4:"data";a:2:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}}}}', 'yes'),
 (181, 'current_theme', '', 'yes'),
@@ -326,9 +326,10 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (226, 'autoptimize_show_adv', '1', 'yes'),
 (231, 'cache', 'a:0:{}', 'yes'),
 (261, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
-(296, 'theme_settings', 'a:15:{s:18:"theme_phone_text_1";s:9:"433 02 50";s:18:"theme_phone_text_2";s:0:"";s:16:"theme_cel_text_1";s:11:"940 170 365";s:16:"theme_cel_text_2";s:11:"942 016 105";s:16:"theme_email_text";s:20:"ventas@kayrel.com.pe";s:18:"theme_address_text";s:0:"";s:19:"theme_atention_text";s:0:"";s:19:"theme_meta_brochure";s:67:"http://localhost/kayrel/wp-content/uploads/2016/11/pdf-sample-1.pdf";s:20:"theme_social_fb_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_twitter_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_youtube_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:27:"theme_social_instagram_text";s:0:"";s:26:"theme_social_linkedin_text";s:0:"";s:23:"theme_social_gplus_text";s:0:"";s:27:"theme_social_pinterest_text";s:0:"";}', 'yes'),
-(366, 'wpmf-category_children', 'a:0:{}', 'yes'),
-(392, 'producto_category_children', 'a:1:{i:10;a:2:{i:0;i:11;i:1;i:12;}}', 'yes') ;
+(296, 'theme_settings', 'a:15:{s:18:"theme_phone_text_1";s:9:"433 02 50";s:18:"theme_phone_text_2";s:0:"";s:16:"theme_cel_text_1";s:11:"940 170 365";s:16:"theme_cel_text_2";s:11:"942 016 105";s:16:"theme_email_text";s:20:"ventas@kayrel.com.pe";s:18:"theme_address_text";s:0:"";s:19:"theme_atention_text";s:27:"Lunes a Sabados 9 am a 6 pm";s:19:"theme_meta_brochure";s:67:"http://localhost/kayrel/wp-content/uploads/2016/11/pdf-sample-1.pdf";s:20:"theme_social_fb_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_twitter_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:25:"theme_social_youtube_text";s:39:"https://www.facebook.com/Ingenioartweb/";s:27:"theme_social_instagram_text";s:0:"";s:26:"theme_social_linkedin_text";s:0:"";s:23:"theme_social_gplus_text";s:0:"";s:27:"theme_social_pinterest_text";s:0:"";}', 'yes'),
+(392, 'producto_category_children', 'a:1:{i:10;a:2:{i:0;i:11;i:1;i:12;}}', 'yes'),
+(413, 'wpmf-category_children', 'a:0:{}', 'yes'),
+(419, 'category_children', 'a:0:{}', 'yes') ;
 
 #
 # End of data contents of table `wp_options`
@@ -355,7 +356,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=224 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=359 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -377,14 +378,14 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (13, 11, '_wp_page_template', 'default'),
 (14, 11, '_edit_lock', '1477696474:1'),
 (15, 13, '_edit_last', '1'),
-(16, 13, '_wp_page_template', 'default'),
-(17, 13, '_edit_lock', '1477696482:1'),
+(16, 13, '_wp_page_template', 'page-templates/page-gallery-images.php'),
+(17, 13, '_edit_lock', '1478278616:1'),
 (18, 15, '_edit_last', '1'),
-(19, 15, '_wp_page_template', 'default'),
-(20, 15, '_edit_lock', '1478109485:1'),
+(19, 15, '_wp_page_template', 'page-templates/page-blog.php'),
+(20, 15, '_edit_lock', '1478282172:1'),
 (21, 17, '_edit_last', '1'),
-(22, 17, '_wp_page_template', 'default'),
-(23, 17, '_edit_lock', '1478108271:1'),
+(22, 17, '_wp_page_template', 'page-templates/page-contact.php'),
+(23, 17, '_edit_lock', '1478289039:1'),
 (24, 19, '_menu_item_type', 'custom'),
 (25, 19, '_menu_item_menu_item_parent', '0'),
 (26, 19, '_menu_item_object_id', '19'),
@@ -567,7 +568,128 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (220, 51, '_wp_attached_file', '2016/11/sample-product2.jpg'),
 (221, 51, 'wpmf_size', '34021'),
 (222, 51, 'wpmf_filetype', 'jpg'),
-(223, 51, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:800;s:6:"height";i:533;s:4:"file";s:27:"2016/11/sample-product2.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"sample-product2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"sample-product2-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:27:"sample-product2-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:27:"sample-product2-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:27:"sample-product2-525x350.jpg";s:5:"width";i:525;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:2:"13";s:8:"quantity";d:100;s:4:"webp";i:0;}}') ;
+(223, 51, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:800;s:6:"height";i:533;s:4:"file";s:27:"2016/11/sample-product2.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"sample-product2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"sample-product2-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:27:"sample-product2-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:27:"sample-product2-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:27:"sample-product2-525x350.jpg";s:5:"width";i:525;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:3:{s:6:"profit";s:2:"13";s:8:"quantity";d:100;s:4:"webp";i:0;}}'),
+(224, 52, '_edit_last', '1'),
+(225, 52, '_edit_lock', '1478273902:1'),
+(226, 53, '_wp_attached_file', '2016/11/sample-imagen.jpg'),
+(227, 53, 'wpmf_size', '86802'),
+(228, 53, 'wpmf_filetype', 'jpg'),
+(229, 53, '_wp_attachment_metadata', 'a:6:{s:5:"width";i:900;s:6:"height";i:601;s:4:"file";s:25:"2016/11/sample-imagen.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:25:"sample-imagen-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:25:"sample-imagen-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:25:"sample-imagen-768x513.jpg";s:5:"width";i:768;s:6:"height";i:513;s:9:"mime-type";s:10:"image/jpeg";}s:14:"post-thumbnail";a:4:{s:4:"file";s:25:"sample-imagen-210x210.jpg";s:5:"width";i:210;s:6:"height";i:210;s:9:"mime-type";s:10:"image/jpeg";}s:17:"custom-blog-image";a:4:{s:4:"file";s:25:"sample-imagen-524x350.jpg";s:5:"width";i:524;s:6:"height";i:350;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:7:"optimus";a:1:{s:5:"error";s:6:"code 0";}}'),
+(230, 52, '_thumbnail_id', '53'),
+(231, 52, 'mbox_order_post', '1'),
+(232, 52, 'mb_image_gallery', ''),
+(233, 52, 'theme_featured_item_check', 'off'),
+(234, 54, '_edit_last', '1'),
+(235, 54, '_edit_lock', '1478273932:1'),
+(236, 54, '_thumbnail_id', '53'),
+(237, 54, 'mbox_order_post', '2'),
+(238, 54, 'mb_image_gallery', ''),
+(239, 54, 'theme_featured_item_check', 'off'),
+(240, 56, '_edit_last', '1'),
+(241, 56, '_edit_lock', '1478274393:1'),
+(242, 56, '_thumbnail_id', '53'),
+(243, 56, 'mbox_order_post', '2'),
+(244, 56, 'mb_image_gallery', ''),
+(245, 56, 'theme_featured_item_check', 'off'),
+(246, 56, '_dp_original', '54'),
+(247, 57, '_edit_last', '1'),
+(248, 57, '_edit_lock', '1478274408:1'),
+(249, 57, '_thumbnail_id', '53'),
+(250, 57, 'mbox_order_post', '2'),
+(251, 57, 'mb_image_gallery', ''),
+(252, 57, 'theme_featured_item_check', 'off'),
+(254, 57, '_dp_original', '56'),
+(255, 58, '_edit_last', '1'),
+(256, 58, '_edit_lock', '1478274419:1'),
+(257, 58, '_thumbnail_id', '53'),
+(258, 58, 'mbox_order_post', '2'),
+(259, 58, 'mb_image_gallery', ''),
+(260, 58, 'theme_featured_item_check', 'off'),
+(262, 58, '_dp_original', '57'),
+(263, 59, '_edit_last', '1'),
+(264, 59, '_edit_lock', '1478274443:1'),
+(265, 59, '_thumbnail_id', '53'),
+(266, 59, 'mbox_order_post', '2'),
+(267, 59, 'mb_image_gallery', ''),
+(268, 59, 'theme_featured_item_check', 'off'),
+(270, 59, '_dp_original', '58'),
+(271, 60, '_edit_last', '1'),
+(272, 60, '_edit_lock', '1478274453:1'),
+(273, 60, '_thumbnail_id', '53'),
+(274, 60, 'mbox_order_post', '2'),
+(275, 60, 'mb_image_gallery', ''),
+(276, 60, 'theme_featured_item_check', 'off'),
+(278, 60, '_dp_original', '59'),
+(279, 13, 'mb_featured_banner', ''),
+(280, 13, 'mb_image_gallery', ''),
+(281, 13, 'theme_featured_item_check', 'off'),
+(282, 62, '_edit_last', '1'),
+(283, 62, '_edit_lock', '1478278681:1'),
+(284, 62, '_oembed_c8428b605c826f7a74cdc29583ebb441', '<iframe width="500" height="281" src="https://www.youtube.com/embed/zd2SueLfMFs?feature=oembed" frameborder="0" allowfullscreen></iframe>'),
+(285, 62, '_oembed_time_c8428b605c826f7a74cdc29583ebb441', '1478278810'),
+(286, 62, 'mbox_order_post', '1'),
+(287, 62, 'mb_image_gallery', ''),
+(288, 62, 'theme_featured_item_check', 'off'),
+(289, 63, '_edit_last', '1'),
+(290, 63, '_edit_lock', '1478278858:1'),
+(291, 63, '_oembed_c8428b605c826f7a74cdc29583ebb441', '<iframe width="500" height="281" src="https://www.youtube.com/embed/zd2SueLfMFs?feature=oembed" frameborder="0" allowfullscreen></iframe>'),
+(292, 63, '_oembed_time_c8428b605c826f7a74cdc29583ebb441', '1478278810'),
+(293, 63, 'mbox_order_post', '2'),
+(294, 63, 'mb_image_gallery', ''),
+(295, 63, 'theme_featured_item_check', 'off'),
+(296, 63, '_dp_original', '62'),
+(297, 64, '_edit_last', '1'),
+(298, 64, '_edit_lock', '1478282020:1'),
+(299, 64, '_oembed_c8428b605c826f7a74cdc29583ebb441', '<iframe width="500" height="281" src="https://www.youtube.com/embed/zd2SueLfMFs?feature=oembed" frameborder="0" allowfullscreen></iframe>'),
+(300, 64, '_oembed_time_c8428b605c826f7a74cdc29583ebb441', '1478278810'),
+(301, 64, 'mbox_order_post', '3'),
+(302, 64, 'mb_image_gallery', ''),
+(303, 64, 'theme_featured_item_check', 'off'),
+(304, 64, '_dp_original', '62'),
+(305, 65, '_edit_last', '1'),
+(306, 65, '_edit_lock', '1478281089:1'),
+(307, 65, '_wp_page_template', 'page-templates/page-gallery-videos.php'),
+(308, 65, 'mbox_order_post', '2'),
+(309, 65, 'mb_featured_banner', ''),
+(310, 65, 'mb_image_gallery', ''),
+(311, 65, 'theme_featured_item_check', 'off'),
+(312, 65, 'mbox_order_post', '2'),
+(313, 1, '_edit_lock', '1478283361:1'),
+(314, 1, '_edit_last', '1'),
+(317, 1, 'mbox_order_post', '1'),
+(318, 1, 'mb_image_gallery', ''),
+(319, 1, 'theme_featured_item_check', 'off'),
+(320, 1, '_wp_old_slug', 'hola-mundo'),
+(321, 1, 'mbox_order_post', '1'),
+(322, 68, '_edit_lock', '1478283377:1'),
+(323, 68, '_edit_last', '1'),
+(324, 68, 'mbox_order_post', '2'),
+(325, 68, 'mbox_order_post', '2') ;
+INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(326, 68, 'mb_image_gallery', ''),
+(327, 68, 'theme_featured_item_check', 'off'),
+(328, 68, '_wp_old_slug', 'hola-mundo'),
+(329, 68, '_dp_original', '1'),
+(332, 70, '_edit_lock', '1478283391:1'),
+(333, 70, '_edit_last', '1'),
+(334, 70, 'mbox_order_post', '3'),
+(335, 70, 'mbox_order_post', '3'),
+(336, 70, 'mb_image_gallery', ''),
+(337, 70, 'theme_featured_item_check', 'off'),
+(338, 70, '_wp_old_slug', 'hola-mundo'),
+(340, 70, '_dp_original', '68'),
+(343, 72, '_edit_last', '1'),
+(344, 72, '_edit_lock', '1478283281:1'),
+(347, 72, 'mbox_order_post', '4'),
+(348, 72, 'mb_image_gallery', ''),
+(349, 72, 'theme_featured_item_check', 'off'),
+(350, 72, 'mbox_order_post', '4'),
+(351, 74, '_edit_last', '1'),
+(352, 74, '_edit_lock', '1478288824:1'),
+(355, 74, 'mbox_order_post', '5'),
+(356, 74, 'mb_image_gallery', ''),
+(357, 74, 'theme_featured_item_check', 'off'),
+(358, 74, 'mbox_order_post', '5') ;
 
 #
 # End of data contents of table `wp_postmeta`
@@ -615,14 +737,14 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
 # Data contents of table `wp_posts`
 #
 INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(1, 1, '2016-10-28 19:23:09', '2016-10-28 19:23:09', 'Bienvenido a WordPress. Esta es su primera entrada. Edítela o bórrela, y ¡empiece a escribir!', '¡Hola mundo!', '', 'publish', 'open', 'open', '', 'hola-mundo', '', '', '2016-10-28 19:23:09', '2016-10-28 19:23:09', '', 0, 'http://localhost/kayrel/?p=1', 0, 'post', '', 1),
+(1, 1, '2016-10-28 19:23:09', '2016-10-28 19:23:09', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada', '', 'publish', 'open', 'open', '', 'nueva-entrada', '', '', '2016-11-04 18:15:57', '2016-11-04 18:15:57', '', 0, 'http://localhost/kayrel/?p=1', 0, 'post', '', 1),
 (2, 1, '2016-10-28 19:23:09', '2016-10-28 19:23:09', 'Esto es una página de ejemplo. Es diferente a una entrada del blog, ya que permanecerá fija en un lugar y se mostrará en la navegación de su sitio (en la mayoría de temas). La mayoría de personas empieza con una página Acerca de, que brinda información a los visitantes de su sitio. Se podría decir algo como esto:\n\n<blockquote>¡Hola! Durante el día soy un mensajero, un aspirante a actor por la noche, y este es mi blog. Vivo en Lima, tengo un enorme perro llamado Pocho, y me gusta el Pisco Sour. (Y caminar bajo la lluvia.)</blockquote>\n\n...o algo como esto:\n\n<blockquote>La compañía XYZ, se fundó en 1971, y ha estado desde entonces, proporcionando artilugios de calidad al público. Está situado en la ciudad de Lima, XYZ emplea a más de 2,000 personas y hace todo tipo de cosas sorprendentes para la comunidad limeña.</blockquote>\n\nComo nuevo usuario de WordPress, usted debe ir a <a href="http://localhost/kayrel/wp-admin/">su panel</a> para eliminar esta página y crear nuevas para su contenido. ¡Que se divierta!', 'Inicio', '', 'publish', 'closed', 'closed', '', 'inicio', '', '', '2016-10-28 23:16:14', '2016-10-28 23:16:14', '', 0, 'http://localhost/kayrel/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2016-10-28 19:23:24', '0000-00-00 00:00:00', '', 'Borrador automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2016-10-28 19:23:24', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=3', 0, 'post', '', 0),
 (4, 1, '2016-10-28 21:35:30', '2016-10-28 21:35:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n<h2 class="text-uppercase"></h2>\r\n&nbsp;\r\n<h2 class="text-uppercase">VISIÓN</h2>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.\r\n<h2 class="text-uppercase"></h2>\r\n<h2 class="text-uppercase">MISIÓN</h2>\r\n<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>', 'Nosotros', '', 'publish', 'closed', 'closed', '', 'nosotros', '', '', '2016-11-02 21:28:13', '2016-11-02 21:28:13', '', 0, 'http://localhost/kayrel/?page_id=4', 0, 'page', '', 0),
@@ -634,11 +756,11 @@ INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (10, 1, '2016-10-28 23:16:41', '2016-10-28 23:16:41', '', 'Varon', '', 'inherit', 'closed', 'closed', '', '9-revision-v1', '', '', '2016-10-28 23:16:41', '2016-10-28 23:16:41', '', 9, 'http://localhost/kayrel/2016/10/28/9-revision-v1/', 0, 'revision', '', 0),
 (11, 1, '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 'Niños', '', 'publish', 'closed', 'closed', '', 'ninos', '', '', '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 0, 'http://localhost/kayrel/?page_id=11', 0, 'page', '', 0),
 (12, 1, '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 'Niños', '', 'inherit', 'closed', 'closed', '', '11-revision-v1', '', '', '2016-10-28 23:16:55', '2016-10-28 23:16:55', '', 11, 'http://localhost/kayrel/2016/10/28/11-revision-v1/', 0, 'revision', '', 0),
-(13, 1, '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 'Galería', '', 'publish', 'closed', 'closed', '', 'galeria', '', '', '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 0, 'http://localhost/kayrel/?page_id=13', 0, 'page', '', 0),
+(13, 1, '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 'Fotos', '', 'publish', 'closed', 'closed', '', 'fotos', '', '', '2016-11-04 15:52:42', '2016-11-04 15:52:42', '', 0, 'http://localhost/kayrel/?page_id=13', 0, 'page', '', 0),
 (14, 1, '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 'Galería', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2016-10-28 23:17:04', '2016-10-28 23:17:04', '', 13, 'http://localhost/kayrel/2016/10/28/13-revision-v1/', 0, 'revision', '', 0),
-(15, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2016-11-02 17:44:02', '2016-11-02 17:44:02', '', 0, 'http://localhost/kayrel/?page_id=15', 0, 'page', '', 0),
+(15, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'publish', 'closed', 'closed', '', 'blog', '', '', '2016-11-04 17:56:12', '2016-11-04 17:56:12', '', 0, 'http://localhost/kayrel/?page_id=15', 0, 'page', '', 0),
 (16, 1, '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 'Blog', '', 'inherit', 'closed', 'closed', '', '15-revision-v1', '', '', '2016-10-28 23:17:13', '2016-10-28 23:17:13', '', 15, 'http://localhost/kayrel/2016/10/28/15-revision-v1/', 0, 'revision', '', 0),
-(17, 1, '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 'Contáctanos', '', 'publish', 'closed', 'closed', '', 'contactanos', '', '', '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 0, 'http://localhost/kayrel/?page_id=17', 0, 'page', '', 0),
+(17, 1, '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 'Contáctanos', '', 'publish', 'closed', 'closed', '', 'contactanos', '', '', '2016-11-04 19:50:39', '2016-11-04 19:50:39', '', 0, 'http://localhost/kayrel/?page_id=17', 0, 'page', '', 0),
 (18, 1, '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 'Contáctanos', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2016-10-28 23:17:24', '2016-10-28 23:17:24', '', 17, 'http://localhost/kayrel/2016/10/28/17-revision-v1/', 0, 'revision', '', 0),
 (19, 1, '2016-10-28 23:21:48', '0000-00-00 00:00:00', '', 'Inicio', '', 'draft', 'closed', 'closed', '', '', '', '', '2016-10-28 23:21:48', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=19', 1, 'nav_menu_item', '', 0),
 (20, 1, '2016-10-28 23:22:30', '2016-10-28 23:22:30', ' ', '', '', 'publish', 'closed', 'closed', '', '20', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 0, 'http://localhost/kayrel/?p=20', 8, 'nav_menu_item', '', 0),
@@ -671,7 +793,31 @@ INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (48, 1, '2016-11-02 22:49:56', '2016-11-02 22:49:56', '', 'Mujer', '', 'publish', 'closed', 'closed', '', 'mujer', '', '', '2016-11-02 22:51:08', '2016-11-02 22:51:08', '', 0, 'http://localhost/kayrel/?p=48', 3, 'nav_menu_item', '', 0),
 (49, 1, '2016-11-02 22:49:49', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2016-11-02 22:49:49', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?p=49', 1, 'nav_menu_item', '', 0),
 (50, 1, '2016-11-02 22:51:09', '2016-11-02 22:51:09', ' ', '', '', 'publish', 'closed', 'closed', '', '50', '', '', '2016-11-02 22:51:09', '2016-11-02 22:51:09', '', 10, 'http://localhost/kayrel/?p=50', 4, 'nav_menu_item', '', 0),
-(51, 1, '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 'sample-product2', '', 'inherit', 'open', 'closed', '', 'sample-product2', '', '', '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 32, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-product2.jpg', 0, 'attachment', 'image/jpeg', 0) ;
+(51, 1, '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 'sample-product2', '', 'inherit', 'open', 'closed', '', 'sample-product2', '', '', '2016-11-03 21:02:41', '2016-11-03 21:02:41', '', 32, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-product2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(52, 1, '2016-11-04 15:39:43', '2016-11-04 15:39:43', '', 'Imágen 1', '', 'publish', 'open', 'closed', '', 'imagen-1', '', '', '2016-11-04 15:39:43', '2016-11-04 15:39:43', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=52', 0, 'theme-gallery-images', '', 0),
+(53, 1, '2016-11-04 15:38:33', '2016-11-04 15:38:33', '', 'sample-imagen', '', 'inherit', 'open', 'closed', '', 'sample-imagen', '', '', '2016-11-04 15:38:33', '2016-11-04 15:38:33', '', 52, 'http://localhost/kayrel/wp-content/uploads/2016/11/sample-imagen.jpg', 0, 'attachment', 'image/jpeg', 0),
+(54, 1, '2016-11-04 15:41:10', '2016-11-04 15:41:10', '', 'Imágen 2', '', 'publish', 'open', 'closed', '', 'imagen-2', '', '', '2016-11-04 15:41:10', '2016-11-04 15:41:10', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=54', 0, 'theme-gallery-images', '', 0),
+(55, 1, '2016-11-04 15:41:21', '0000-00-00 00:00:00', '', 'Borrador automático', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2016-11-04 15:41:21', '0000-00-00 00:00:00', '', 0, 'http://localhost/kayrel/?post_type=theme-products&p=55', 0, 'theme-products', '', 0),
+(56, 1, '2016-11-04 15:46:26', '2016-11-04 15:46:26', '', 'Imágen 3', '', 'publish', 'open', 'closed', '', 'imagen-3', '', '', '2016-11-04 15:46:33', '2016-11-04 15:46:33', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=56', 0, 'theme-gallery-images', '', 0),
+(57, 1, '2016-11-04 15:46:40', '2016-11-04 15:46:40', '', 'Imágen 4', '', 'publish', 'open', 'closed', '', 'imagen-4', '', '', '2016-11-04 15:46:48', '2016-11-04 15:46:48', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=57', 0, 'theme-gallery-images', '', 0),
+(58, 1, '2016-11-04 15:46:50', '2016-11-04 15:46:50', '', 'Imágen 5', '', 'publish', 'open', 'closed', '', 'imagen-5', '', '', '2016-11-04 15:46:59', '2016-11-04 15:46:59', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=58', 0, 'theme-gallery-images', '', 0),
+(59, 1, '2016-11-04 15:47:15', '2016-11-04 15:47:15', '', 'Imágen 6', '', 'publish', 'open', 'closed', '', 'imagen-6', '', '', '2016-11-04 15:47:23', '2016-11-04 15:47:23', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=59', 0, 'theme-gallery-images', '', 0),
+(60, 1, '2016-11-04 15:47:26', '2016-11-04 15:47:26', '', 'Imágen 7', '', 'publish', 'open', 'closed', '', 'imagen-7', '', '', '2016-11-04 15:47:33', '2016-11-04 15:47:33', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-images&#038;p=60', 0, 'theme-gallery-images', '', 0),
+(61, 1, '2016-11-04 15:51:43', '2016-11-04 15:51:43', '', 'Fotos', '', 'inherit', 'closed', 'closed', '', '13-revision-v1', '', '', '2016-11-04 15:51:43', '2016-11-04 15:51:43', '', 13, 'http://localhost/kayrel/13-revision-v1/', 0, 'revision', '', 0),
+(62, 1, '2016-11-04 17:00:18', '2016-11-04 17:00:18', 'https://www.youtube.com/watch?v=zd2SueLfMFs', 'Video Promocional 1', '', 'publish', 'open', 'closed', '', 'video-promocional-1', '', '', '2016-11-04 17:00:18', '2016-11-04 17:00:18', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-videos&#038;p=62', 0, 'theme-gallery-videos', '', 0),
+(63, 1, '2016-11-04 17:00:39', '2016-11-04 17:00:39', 'https://www.youtube.com/watch?v=zd2SueLfMFs', 'Video Promocional 3', '', 'publish', 'open', 'closed', '', 'video-promocional-3', '', '', '2016-11-04 17:00:58', '2016-11-04 17:00:58', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-videos&#038;p=63', 0, 'theme-gallery-videos', '', 0),
+(64, 1, '2016-11-04 17:00:44', '2016-11-04 17:00:44', 'https://www.youtube.com/watch?v=zd2SueLfMFs', 'Video Promocional 2', '', 'publish', 'open', 'closed', '', 'video-promocional-2', '', '', '2016-11-04 17:00:52', '2016-11-04 17:00:52', '', 0, 'http://localhost/kayrel/?post_type=theme-gallery-videos&#038;p=64', 0, 'theme-gallery-videos', '', 0),
+(65, 1, '2016-11-04 17:13:18', '2016-11-04 17:13:18', '', 'Videos', '', 'publish', 'closed', 'closed', '', 'videos', '', '', '2016-11-04 17:13:18', '2016-11-04 17:13:18', '', 0, 'http://localhost/kayrel/?page_id=65', 0, 'page', '', 0),
+(66, 1, '2016-11-04 17:13:18', '2016-11-04 17:13:18', '', 'Videos', '', 'inherit', 'closed', 'closed', '', '65-revision-v1', '', '', '2016-11-04 17:13:18', '2016-11-04 17:13:18', '', 65, 'http://localhost/kayrel/65-revision-v1/', 0, 'revision', '', 0),
+(67, 1, '2016-11-04 18:15:57', '2016-11-04 18:15:57', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2016-11-04 18:15:57', '2016-11-04 18:15:57', '', 1, 'http://localhost/kayrel/1-revision-v1/', 0, 'revision', '', 0),
+(68, 1, '2016-11-04 18:16:07', '2016-11-04 18:16:07', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 2', '', 'publish', 'open', 'open', '', 'nueva-entrada-2', '', '', '2016-11-04 18:16:17', '2016-11-04 18:16:17', '', 0, 'http://localhost/kayrel/?p=68', 0, 'post', '', 0),
+(69, 1, '2016-11-04 18:16:17', '2016-11-04 18:16:17', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 2', '', 'inherit', 'closed', 'closed', '', '68-revision-v1', '', '', '2016-11-04 18:16:17', '2016-11-04 18:16:17', '', 68, 'http://localhost/kayrel/68-revision-v1/', 0, 'revision', '', 0),
+(70, 1, '2016-11-04 18:16:21', '2016-11-04 18:16:21', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 3', '', 'publish', 'open', 'open', '', 'nueva-entrada-3', '', '', '2016-11-04 18:16:31', '2016-11-04 18:16:31', '', 0, 'http://localhost/kayrel/?p=70', 0, 'post', '', 0),
+(71, 1, '2016-11-04 18:16:31', '2016-11-04 18:16:31', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 3', '', 'inherit', 'closed', 'closed', '', '70-revision-v1', '', '', '2016-11-04 18:16:31', '2016-11-04 18:16:31', '', 70, 'http://localhost/kayrel/70-revision-v1/', 0, 'revision', '', 0),
+(72, 1, '2016-11-04 18:16:51', '2016-11-04 18:16:51', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 4', '', 'publish', 'open', 'open', '', 'nueva-entrada-4', '', '', '2016-11-04 18:16:51', '2016-11-04 18:16:51', '', 0, 'http://localhost/kayrel/?p=72', 0, 'post', '', 0),
+(73, 1, '2016-11-04 18:16:51', '2016-11-04 18:16:51', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Nueva Entrada 4', '', 'inherit', 'closed', 'closed', '', '72-revision-v1', '', '', '2016-11-04 18:16:51', '2016-11-04 18:16:51', '', 72, 'http://localhost/kayrel/72-revision-v1/', 0, 'revision', '', 0),
+(74, 1, '2016-11-04 19:08:30', '2016-11-04 19:08:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Entrada 5', '', 'publish', 'open', 'open', '', 'entrada-5', '', '', '2016-11-04 19:08:30', '2016-11-04 19:08:30', '', 0, 'http://localhost/kayrel/?p=74', 0, 'post', '', 0),
+(75, 1, '2016-11-04 19:08:30', '2016-11-04 19:08:30', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Entrada 5', '', 'inherit', 'closed', 'closed', '', '74-revision-v1', '', '', '2016-11-04 19:08:30', '2016-11-04 19:08:30', '', 74, 'http://localhost/kayrel/74-revision-v1/', 0, 'revision', '', 0) ;
 
 #
 # End of data contents of table `wp_posts`
@@ -724,7 +870,12 @@ INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id`, `term_ord
 (47, 7, 0),
 (48, 3, 0),
 (50, 3, 0),
-(51, 6, 0) ;
+(51, 6, 0),
+(53, 13, 0),
+(68, 1, 0),
+(70, 1, 0),
+(72, 1, 0),
+(74, 1, 0) ;
 
 #
 # End of data contents of table `wp_term_relationships`
@@ -753,14 +904,14 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
 # Data contents of table `wp_term_taxonomy`
 #
 INSERT INTO `wp_term_taxonomy` ( `term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1),
+(1, 1, 'category', '', 0, 5),
 (3, 3, 'nav_menu', '', 0, 9),
 (4, 4, 'wpmf-category', '', 0, 1),
 (5, 5, 'wpmf-category', '', 0, 0),
@@ -770,7 +921,8 @@ INSERT INTO `wp_term_taxonomy` ( `term_taxonomy_id`, `term_id`, `taxonomy`, `des
 (9, 9, 'wpmf-category', '', 0, 0),
 (10, 10, 'producto_category', '', 0, 0),
 (11, 11, 'producto_category', '', 10, 4),
-(12, 12, 'producto_category', '', 10, 1) ;
+(12, 12, 'producto_category', '', 10, 1),
+(13, 13, 'wpmf-category', '', 0, 0) ;
 
 #
 # End of data contents of table `wp_term_taxonomy`
@@ -839,7 +991,7 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 #
@@ -856,7 +1008,8 @@ INSERT INTO `wp_terms` ( `term_id`, `name`, `slug`, `term_group`) VALUES
 (9, 'MARCAS', 'marcas', 1),
 (10, 'Mujer', 'mujer', 0),
 (11, 'Casual', 'casual', 0),
-(12, 'Elegante', 'elegante', 0) ;
+(12, 'Elegante', 'elegante', 0),
+(13, 'GALERÍA DE IMÁGENES', 'galeria-de-imagenes', 1) ;
 
 #
 # End of data contents of table `wp_terms`
@@ -903,7 +1056,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:6:{s:64:"78d82ce7fdc49cc19570ae8c7c1882741df9b241c8d9db64c3451c9c503da01e";a:4:{s:10:"expiration";i:1478193390;s:2:"ip";s:3:"::1";s:2:"ua";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478020590;}s:64:"d05e58f7909a918ba8cf2817f31552b1d1e5330df5e92932da8b1f7d02939fed";a:4:{s:10:"expiration";i:1478236824;s:2:"ip";s:3:"::1";s:2:"ua";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478064024;}s:64:"28aa7d3ea81fbccd81abecc28382728c0c66ce1532c46bf2efc4f7347ae57308";a:4:{s:10:"expiration";i:1478276968;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478104168;}s:64:"59c3c0c9e5e6ceaae816513117c53d2e64187388505b62725792a41cb096a355";a:4:{s:10:"expiration";i:1478276973;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478104173;}s:64:"ee3f914b81be205ff6872b187a39d3058efedd0763e23b69bced5cf5baf3ed3b";a:4:{s:10:"expiration";i:1478359491;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186691;}s:64:"f0ae4532179b134c9ba12b24df373b90bb1a02a32c90df6b9e927c9bfe08c8ae";a:4:{s:10:"expiration";i:1478359542;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186742;}}'),
+(14, 1, 'session_tokens', 'a:3:{s:64:"ee3f914b81be205ff6872b187a39d3058efedd0763e23b69bced5cf5baf3ed3b";a:4:{s:10:"expiration";i:1478359491;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186691;}s:64:"f0ae4532179b134c9ba12b24df373b90bb1a02a32c90df6b9e927c9bfe08c8ae";a:4:{s:10:"expiration";i:1478359542;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478186742;}s:64:"b0323e540e2779ed9785d8a23e8e9f84a3316a864af490f63188897e44de8df1";a:4:{s:10:"expiration";i:1478472675;s:2:"ip";s:3:"::1";s:2:"ua";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36";s:5:"login";i:1478299875;}}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'closedpostboxes_page', 'a:0:{}'),
 (17, 1, 'metaboxhidden_page', 'a:4:{i:0;s:10:"postcustom";i:1;s:16:"commentstatusdiv";i:2;s:7:"slugdiv";i:3;s:9:"authordiv";}'),
