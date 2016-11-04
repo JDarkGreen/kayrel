@@ -92,6 +92,9 @@ function add_thumbnail_columns_data( $column, $post_id ) {
 
 $custom_posts_type   = array();
 $custom_posts_type[] = "theme-slider-home";
+$custom_posts_type[] = "theme-products";
+$custom_posts_type[] = "theme-branding";
+$custom_posts_type[] = "theme-gallery-images";
 $custom_posts_type[] = "post";
 
 

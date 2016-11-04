@@ -39,6 +39,22 @@ function register_custom_post_types()
 		'menu_icon'   => 'dashicons-groups',
 	);
 
+	/*Galería Imágenes*/
+	$arr_cpt['theme-gallery-images'] = array(
+		'plural_name' => 'Galería Imágenes',
+		'name'        => 'Imágen',
+		'description' => 'Imágenes en el tema',
+		'menu_icon'   => 'dashicons-images-alt2',
+	);
+
+	/*Galería Videos*/
+	$arr_cpt['theme-gallery-videos'] = array(
+		'plural_name' => 'Galería Videos',
+		'name'        => 'Video',
+		'description' => 'Videos en el tema',
+		'menu_icon'   => 'dashicons-video-alt3',
+	);
+
 	/*
 	 * Hacer Loop de Custom Post Types
 	 */
@@ -59,11 +75,11 @@ function register_custom_post_types()
 			'name'               => __( $plural_name , LANG ),
 			'singular_name'      => __( $name, LANG ),
 			'add_new'            => __( 'Agregar ' . $name , LANG ),
-			'add_new_item'       => __( 'Agregar nuevo ' . $name , LANG ),
+			'add_new_item'       => __( 'Agregar nuev@ ' . $name , LANG ),
 			'new_item'           => __( 'Nuevo ' . $name , LANG ),
 			'edit_item'          => __( 'Editar ' . $name ,  LANG ),
 			'view_item'          => __( 'Ver ' . $name , LANG ),
-			'all_items'          => __( 'Todos los ' . $name , LANG ),
+			'all_items'          => __( 'Tod@s l@s ' . $name , LANG ),
 			'search_items'       => __( 'Buscar ' . $name , LANG ),
 			'parent_item_colon'  => __( $name . ' padre:', LANG ),
 			'not_found'          => __( $name . ' no encontrado.', LANG ),

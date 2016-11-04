@@ -24,7 +24,7 @@ var j = jQuery.noConflict();
             if (j(this).data('params')) iframe_url+='&'+j(this).data('params');
     
             // The height and width of the iFrame should be the same as parent
-            var iframe = j('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': j(this).width(), 'height': j(this).height() })
+            var iframe = j('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': j(this).width(), 'height': j(this).height() , 'allowfullscreen' : true })
     
             // Replace the YouTube thumbnail with YouTube HTML5 Player
             j(this).replaceWith(iframe);

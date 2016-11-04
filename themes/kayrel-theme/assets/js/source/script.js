@@ -174,10 +174,9 @@ function sendDataFormularybyAjax( formulario )
 
 		e.preventDefault();
 		//Subir el formulario mediante ajax
-		j.post( url + '/email/enviar.php', 
+		j.post( data.themeroot + '/email/enviar.php', 
 		{ 
 			name    : j("#input_name").val(),
-			lastname: j("#input_lastname").val(),
 			email   : j("#input_email").val(),
 			phone   : j("#input_phone").val(),
 			subject : j("#input_subject").val(),
@@ -185,16 +184,32 @@ function sendDataFormularybyAjax( formulario )
 			
 		},function(data){
 
-			alert( data );
+			console.log(data);
 
-			j("#input_name").val("");
-			j("#input_lastname").val("");
-			j("#input_email").val("");
-			j("#input_phone").val("");
-			j("input_subject").val("");
-			j("#input_message").val("");
+			var dataParse = JSON.parse(data);
 
-			window.location.reload(false);
+			if( String(dataParse.exito) == 'ok' )
+			{ 
+				alert( dataParse.message ); 
+	
+				j("#input_name").val("");
+				j("#input_email").val("");
+				j("#input_phone").val("");
+				j("input_subject").val("");
+				j("#input_message").val("");
+				
+				window.location.reload(false);
+			}
+			else{ 
+				
+				var phrase = 'Un error a ocurrido, por favor ';
+				phrase += 'inténtelo nuevamente dentro de unos minutos';
+				alert(phrase);
+
+				window.location.reload(false);
+			}
+
+
 		});			
 	}); 
 }

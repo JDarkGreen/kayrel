@@ -40,9 +40,17 @@ function load_custom_scripts()
 	//custom script para videos de youtube
 	wp_enqueue_script('custom_lazy_youtube', THEMEROOT . '/assets/js/source/lazy-load-youtube.js', array('jquery'), '1.0' , true );
 
-	//custom script
-	wp_enqueue_script('custom_script', THEMEROOT . '/assets/js/source/script.js', array('jquery'), '1.0' , true );
+	//Registrar Custom Script Personalizado
+	wp_register_script( 'wp-js-custom_script' , THEMEROOT . '/assets/js/source/script.js' , array('jquery') , '1.0' , true );
 
+	//Localización enviar nueva data
+	$theme_data = array(
+		'themeroot' => THEMEROOT
+	);
+	
+	//Asignar
+	wp_localize_script( 'wp-js-custom_script' , 'data' , $theme_data );
+	wp_enqueue_script('wp-js-custom_script');
 }
 
 add_action('wp_enqueue_scripts', 'load_custom_scripts');

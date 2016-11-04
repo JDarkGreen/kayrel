@@ -63,3 +63,13 @@ $path_function_filters = realpath( dirname(dirname(__FILE__)) . '/custom-functio
 if( stream_resolve_include_path($path_function_filters) )
 include($path_function_filters);
 
+
+/**
+* ---------------------------------------------------------------
+* -- OBTENER ID DE YOUTUBE
+* ---------------------------------------------------------------
+**/
+$path_function_id_youtube = realpath( dirname(dirname(__FILE__)) . '/custom-functions/functions-get-id-youtube.php' );
+if( stream_resolve_include_path($path_function_id_youtube) )
+include($path_function_id_youtube);
+
