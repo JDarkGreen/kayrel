@@ -45,7 +45,7 @@
 <header id="mainHeader">
 
 	<!-- Barra de Navegación Superior -->
-	<div id="top-bar-header" class="text-xs-right">
+	<div id="top-bar-header" class="text-xs-right hidden-xs-down">
 
 		<!-- Wrapper -->
 		<div class="wrapperHeader">
@@ -77,7 +77,7 @@
 	</div> <!-- /.top-bar-header -->
 
 	<!-- Navegación -->
-	<div id="bottom-bar-header" class="">
+	<div id="bottom-bar-header" class="hidden-xs-down">
 		
 		<!-- Wrapper -->
 		<div class="wrapperHeader">

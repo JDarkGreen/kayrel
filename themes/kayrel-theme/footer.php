@@ -20,7 +20,9 @@ $options = get_option('theme_settings'); ?>
 			<!-- Item Footer -->
 			<div class="col-xs-12 col-sm-2">
 				
-				<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
+				<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid m-x-auto" />
+
+				<br class="hidden-sm-up" />
 
 			</div> <!-- /.col-xs-12 col-sm-4 -->
 
@@ -59,6 +61,8 @@ $options = get_option('theme_settings'); ?>
 				<div id="copyright">
 					Copyright &copy; www.kayrel.com.pe
 				</div> <!-- /#copyright -->
+
+				<br class="hidden-sm-up" />
 				
 			</div> <!-- /.col-xs-12 col-sm-4 -->
 

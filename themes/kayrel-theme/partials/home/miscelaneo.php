@@ -11,7 +11,7 @@
 	<!-- Wrapper Layout -->
 	<div class="wrapperLayoutPage">
 
-		<div class="flexible align-items">
+		<div class="flexible flexible-wrap align-items">
 	
 			<!-- Catálogo -->
 			<div class="itemMiscelaneo relative">
