@@ -43,8 +43,9 @@ $the_query = new WP_Query($args); ?>
 						<div class="bg-container">
 
 							<figure>
+								<a href="<?= get_permalink(); ?>" class="">
 								<?= get_the_post_thumbnail( get_the_ID() , 'full' , array('class'=>'img-fluid d-block m-x-auto') ); ?>
-
+								</a>
 							</figure> <!-- /figure -->
 
 							<div class="content-info text-xs-center">
