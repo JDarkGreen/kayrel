@@ -32,7 +32,7 @@ you've learned with others.
 
 /* Sidebar Transitions (For mobile version ) */
 @import url("assets/styles/vendor/sidebar-transitions/normalize.css"); 
-@import url("assets/styles/vendor/sidebar-transitions/demo.css"); 
+/*@import url("assets/styles/vendor/sidebar-transitions/demo.css");*/ 
 @import url("assets/styles/vendor/sidebar-transitions/component.css"); 
 
 /*
