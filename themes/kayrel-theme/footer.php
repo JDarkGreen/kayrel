@@ -83,7 +83,15 @@ $options = get_option('theme_settings'); ?>
 	
 </footer> <!-- /#mainFooter -->
 
+
+
+</div><!-- /st-content -->
+
+</div><!-- /st-pusher -->
+
+</div><!-- /st-container -->
+
+
 <?php wp_footer(); ?>
 
-</body>
-</html>
+</body> </html>

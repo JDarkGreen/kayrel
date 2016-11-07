@@ -41,91 +41,121 @@
 
 <body <?php body_class(); ?>>
 
-<!-- Header Principal -->
-<header id="mainHeader">
+<!-- Contenedor Wrapper -->
+<div id="st-container" class="st-container">
 
-	<!-- Barra de Navegación Superior -->
-	<div id="top-bar-header" class="text-xs-right hidden-xs-down">
+	<!-- Content push wrapper -->
+	<div class="st-pusher">
 
-		<!-- Wrapper -->
-		<div class="wrapperHeader">
-			
-			<!-- Cel -->
-			<span> 
-				<i class="fa fa-whatsapp" aria-hidden="true"></i>
-				995 512 401
-			</span>			
+		<!-- sidebar content -->
+		<div class="st-menu st-effect-14" id="menu-14">
+			<?php  
+			//Incluir path de menu mobile
+			if(stream_resolve_include_path('partials/header/main-nav-mobile.php'))
+				include('partials/header/main-nav-mobile.php'); ?>
+		</div>
 
-			<!-- Email -->
-			<span> 
-				<i class="fa fa-envelope" aria-hidden="true"></i>
-				info@radac.com.pe
-			</span>
-			
-			<div class="pull-xs-right">	
-				<?php  
-				/*
-				 * Incluir menu de Redes sociales
-				 */
-				if(stream_resolve_include_path('partials/common-section/social-links.php'))
-					include('partials/common-section/social-links.php');
-				?>
-			</div> <!-- /.pull-xs-right -->
-			
-		</div> <!-- /.wrapperHeader -->
-		
-	</div> <!-- /.top-bar-header -->
 
-	<!-- Navegación -->
-	<div id="bottom-bar-header" class="hidden-xs-down">
-		
-		<!-- Wrapper -->
-		<div class="wrapperHeader">
-			
-			<div class="row flexible align-items-center">
-				
-				<div class="col-xs-12 col-sm-3">
+		<div class="st-content"><!-- this is the wrapper for the content -->
 
-					<!-- Logo -->
-					<h1 id="mainLogo">
-						<a href="<?= site_url(); ?>">
-							<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
-						</a>
-					</h1>
+				<!-- Header Principal -->
+				<header id="mainHeader">
+
+					<!-- Barra de Navegación Superior -->
+					<div id="top-bar-header" class="text-xs-right hidden-xs-down">
+
+						<!-- Wrapper -->
+						<div class="wrapperHeader">
+							
+							<!-- Cel -->
+							<span> 
+								<i class="fa fa-whatsapp" aria-hidden="true"></i>
+								995 512 401
+							</span>			
+
+							<!-- Email -->
+							<span> 
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								info@radac.com.pe
+							</span>
+							
+							<div class="pull-xs-right">	
+								<?php  
+								/*
+								 * Incluir menu de Redes sociales
+								 */
+								if(stream_resolve_include_path('partials/common-section/social-links.php'))
+									include('partials/common-section/social-links.php');
+								?>
+							</div> <!-- /.pull-xs-right -->
+							
+						</div> <!-- /.wrapperHeader -->
+						
+					</div> <!-- /.top-bar-header -->
+
+					<!-- Navegación -->
+					<div id="bottom-bar-header" class="hidden-xs-down">
+						
+						<!-- Wrapper -->
+						<div class="wrapperHeader">
+							
+							<div class="row flexible align-items-center">
+								
+								<div class="col-xs-12 col-sm-3">
+
+									<!-- Logo -->
+									<h1 id="mainLogo">
+										<a href="<?= site_url(); ?>">
+											<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
+										</a>
+									</h1>
+									
+								</div> <!-- /.col-xs-12 col-sm-2 -->
+
+								<div class="col-xs-12 col-sm-9">
+									
+									<nav id="mainNav" class="text-uppercase">
+									<?php  
+									/* Incluir Template de Navegación */ 
+									if(stream_resolve_include_path('partials/header/main-nav.php')) 
+										include('partials/header/main-nav.php'); ?>
+									</nav> <!-- /#mainNav -->
+									
+								</div> <!-- /.col-xs-12 col-sm-10 -->
+
+							</div> <!-- /.row -->
+
+						</div> <!-- /.wrapperHeader -->
+
+					</div> <!-- /.flexible -->
+
+					<!-- Contenedor Mobile -->
+					<div id="mobile-container" class="hidden-sm-up">
+						
+						<div class="row">
+							
+							<div class="col-xs-7">
+								<!-- Logo -->
+								<h1 id="mainLogo">
+									<a href="<?= site_url(); ?>">
+										<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
+									</a>
+								</h1>
+							</div> <!-- /.col-xs-7 -->
+
+							<div class="col-xs-5">
+								
+								<button id="menu-mobile" class="js-sidebar-effects" data-effect="st-effect-14">
+									<i class="fa fa-bars" aria-hidden="true"></i>
+									<?= __( 'Menú' , LANG ); ?>
+								</button> <!-- #btn-menu-mobile -->
+				 				
+							</div> <!-- /.col-xs-5 -->
+
+						</div>	<!-- /row -->
+
+					</div> <!-- /#mobile-container -->
 					
-				</div> <!-- /.col-xs-12 col-sm-2 -->
+				</header> <!-- /.mainHeader -->
 
-				<div class="col-xs-12 col-sm-9">
-					
-					<nav id="mainNav" class="text-uppercase">
-					<?php  
-					/* Incluir Template de Navegación */ 
-					if(stream_resolve_include_path('partials/header/main-nav.php')) 
-						include('partials/header/main-nav.php'); ?>
-					</nav> <!-- /#mainNav -->
-					
-				</div> <!-- /.col-xs-12 col-sm-10 -->
 
-			</div> <!-- /.row -->
-
-		</div> <!-- /.wrapperHeader -->
-
-	</div> <!-- /.flexible -->
-
-	<!-- Contenedor Mobile -->
-	<div id="mobile-container" class="hidden-sm-up">
-		<div class="row">
-			
-			<div class="col-xs-8">
-				<!-- Logo -->
-				<h1 id="mainLogo">
-					<a href="<?= site_url(); ?>">
-						<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
-					</a>
-				</h1>
-			</div> <!-- /.col-xs-8 -->
-
-		</div>	
-	</div> <!-- /#mobile-container -->
-	
-</header> <!-- /.mainHeader -->

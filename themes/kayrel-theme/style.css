@@ -30,6 +30,11 @@ you've learned with others.
 /* Font Awesome */
 @import url("assets/styles/vendor/font-awesome/css/font-awesome.min.css"); 
 
+/* Sidebar Transitions (For mobile version ) */
+@import url("assets/styles/vendor/sidebar-transitions/normalize.css"); 
+@import url("assets/styles/vendor/sidebar-transitions/demo.css"); 
+@import url("assets/styles/vendor/sidebar-transitions/component.css"); 
+
 /*
  * Estilos Personalizados
  */

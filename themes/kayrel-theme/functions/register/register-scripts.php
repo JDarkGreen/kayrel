@@ -40,6 +40,15 @@ function load_custom_scripts()
 	//custom script para videos de youtube
 	wp_enqueue_script('custom_lazy_youtube', THEMEROOT . '/assets/js/source/lazy-load-youtube.js', array('jquery'), '1.0' , true );
 
+	/*
+	 * Cargar Slidebar Transitions 
+	 */
+	wp_enqueue_script( 'wp-modernizr-js' , THEMEROOT . '/assets/js/vendor/sidebar-transitions/modernizr.custom.js' , array('jquery') , '2.6.2' , true );
+	
+	wp_enqueue_script( 'wp-classie-js' , THEMEROOT . '/assets/js/vendor/sidebar-transitions/classie.js' , array('jquery') , '1.0.0' , true );	
+
+	wp_enqueue_script( 'wp-sidebar-effects-js' , THEMEROOT . '/assets/js/vendor/sidebar-transitions/sidebarEffects.js' , array('jquery') , '1.0.0' , true );
+
 	//Registrar Custom Script Personalizado
 	wp_register_script( 'wp-js-custom_script' , THEMEROOT . '/assets/js/source/script.js' , array('jquery') , '1.0' , true );
 
