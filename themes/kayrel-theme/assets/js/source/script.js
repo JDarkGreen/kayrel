@@ -11,14 +11,16 @@ function HomeCarousel()
 	if( j("#carousel-home").length )
 	{
 		j("#carousel-home").revolution({
-			sliderType  : "standard",
-			sliderLayout: "auto",
-			autoHeight  : "on",
-			delay       : 9000,
-			minHeight   : 280, 
-			gridwidth   : 1366,
-			gridheight  : 574,
-			navigation : {
+			sliderType      : "standard",
+			sliderLayout    : "fullwidth",
+			autoHeight      : "off",
+			delay           : 9000,
+			minHeight       : 280, 
+			disable_onmobile: 'on',
+			responsiveLevels: [1366, 1024, 778, 480],
+			gridwidth       : [1366, 1024, 778, 480],
+			gridheight      : [574, 600, 500, 400],
+			navigation      : {
 				arrows : { 
 					enable      : true ,  
 					hide_onleave: false, 

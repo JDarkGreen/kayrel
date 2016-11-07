@@ -111,5 +111,21 @@
 		</div> <!-- /.wrapperHeader -->
 
 	</div> <!-- /.flexible -->
+
+	<!-- Contenedor Mobile -->
+	<div id="mobile-container" class="hidden-sm-up">
+		<div class="row">
+			
+			<div class="col-xs-8">
+				<!-- Logo -->
+				<h1 id="mainLogo">
+					<a href="<?= site_url(); ?>">
+						<img src="<?= IMAGES ?>/logo.png" alt="<?= get_bloginfo('description') ?>" class="img-fluid" />
+					</a>
+				</h1>
+			</div> <!-- /.col-xs-8 -->
+
+		</div>	
+	</div> <!-- /#mobile-container -->
 	
 </header> <!-- /.mainHeader -->

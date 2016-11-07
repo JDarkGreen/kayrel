@@ -56,7 +56,7 @@
 				<img src="<?= $feat_img ?>"  alt=""  width="1920" height="1080" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
 
      			<!-- LAYER NR -->
-     			<div class="tp-caption Concept-Title tp-resizeme rs-parallaxlevel-2 skrollable skrollable-between" data-x="[950]" data-hoffset="['0','0','0','0']" data-y="[250]" data-voffset="['0','0','0','0']" data-width="['none','none','none','575']" data-height="none" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;" data-start="800" data-splitin="none" data-splitout="none" data-responsive_offset="off">
+     			<div class="tp-caption Concept-Title tp-resizeme rs-parallaxlevel-2 skrollable skrollable-between" data-x="[950,20]" data-hoffset="['0','0','0','0']" data-y="[250,50]" data-voffset="['0','0','0','0']" data-width="[575,'none','none','none']" data-height="none" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:left(R);s:1000;e:Power3.easeIn;" data-start="800" data-splitin="none" data-splitout="none" data-responsive_offset="off">
      				
      				<!-- Container Text -->
      				<div class="contentTextSlider">
